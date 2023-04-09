@@ -5,4 +5,4 @@ LT Abroad Theme - [demo](https://techradiant.github.io/flamingoabroadconsultancy
 Educenter - [demo](https://techradiant.github.io/flamingoabroadconsultancy/educenter/theme/index.html)
 
 Known - [download](https://www.free-css.com/free-css-templates/page251/known)
-[demo] - https://techradiant.github.io/flamingoabroadconsultancy/known/
+[demo](https://techradiant.github.io/flamingoabroadconsultancy/known/)
