@@ -23,6 +23,9 @@ In Visual Studio Code, press Ctrl+F5 to run the app. At the Select environment p
 The default browser launched with the following URL: https://localhost:5001
 
 
+-- [Adding a Razor Page](https://www.learnrazorpages.com/razor-pages/tutorial/bakery/new-page)
+dotnet new page --name About --namespace FAC.Web.Pages --output Pages
+
 
 References:
 [ASP .NET Core 5 Razor Pages: how to properly use Partial View and validate it's model state?](
