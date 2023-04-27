@@ -275,12 +275,27 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="plugins\revolution\css\layers.css" />
+    <Content Include="plugins\revolution\css\navigation.css" />
+    <Content Include="plugins\revolution\css\settings.css" />
+    <Content Include="plugins\revolution\js\extensions\revolution.extension.actions.min.js" />
+    <Content Include="plugins\revolution\js\extensions\revolution.extension.carousel.min.js" />
+    <Content Include="plugins\revolution\js\extensions\revolution.extension.kenburn.min.js" />
+    <Content Include="plugins\revolution\js\extensions\revolution.extension.layeranimation.min.js" />
+    <Content Include="plugins\revolution\js\extensions\revolution.extension.migration.min.js" />
+    <Content Include="plugins\revolution\js\extensions\revolution.extension.navigation.min.js" />
+    <Content Include="plugins\revolution\js\extensions\revolution.extension.parallax.min.js" />
+    <Content Include="plugins\revolution\js\extensions\revolution.extension.slideanims.min.js" />
+    <Content Include="plugins\revolution\js\extensions\revolution.extension.video.min.js" />
+    <Content Include="plugins\revolution\js\jquery.themepunch.revolution.min.js" />
+    <Content Include="plugins\revolution\js\jquery.themepunch.tools.min.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="plugins\revolution\fonts\revicons\revicons.woff" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -292,6 +307,8 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\respond.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
