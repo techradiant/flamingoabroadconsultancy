@@ -13,11 +13,15 @@ namespace FAC.Web
     {
         protected void Application_Start()
         {
+            log4net.Config.XmlConfigurator.Configure(
+                    new System.IO.FileInfo(HttpContext.Current.Server.MapPath("~/Config/log4net.config")));
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            Models.ApplicationDbContext context = new Models.ApplicationDbContext();
+            IdentityHelper.PerformInitialSetup(context);
         }
     }
 }
