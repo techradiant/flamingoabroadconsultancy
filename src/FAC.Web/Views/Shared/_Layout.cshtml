@@ -6,7 +6,7 @@
 
     <!-- Stylesheets -->
     @Styles.Render("~/Content/css")
-    @*@Scripts.Render("~/bundles/modernizr")*@
+    @Scripts.Render("~/bundles/modernizr")
 
     <link rel="shortcut icon" href="media/images/favicon.png" type="image/x-icon">
     <link rel="icon" href="media/images/favicon.png" type="image/x-icon">
@@ -65,28 +65,12 @@
 
                     <!--Nav Box-->
                     <div class="nav-outer">
-
                         <nav class="nav main-menu">
                             <ul class="navigation">
                                 <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "current" })</li>
                                 <li class="dropdown">
-                                    <a href="#">Pages</a>
+                                    @Html.ActionLink("Services", "Index", "Services", new { area = "" }, new { @class = "" })
                                     <ul>
-                                        <li><a href="page-about.html">About</a></li>
-                                        <li class="dropdown">
-                                            <a href="#">Country</a>
-                                            <ul>
-                                                <li><a href="page-country.html">Country grid</a></li>
-                                                <li><a href="page-country-details.html">Country Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="#">Team</a>
-                                            <ul>
-                                                <li><a href="page-team.html">Team List</a></li>
-                                                <li><a href="page-team-details.html">Team Details</a></li>
-                                            </ul>
-                                        </li>
                                         <li><a href="page-testimonial.html">Testimonial</a></li>
                                         <li class="dropdown">
                                             <a href="#">Shop</a>
@@ -98,15 +82,31 @@
                                                 <li><a href="shop-checkout.html">Checkout</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="page-FAQ.html">FAQ</a></li>
+
                                         <li><a href="page-404.html">Page 404</a></li>
+                                        <li class="dropdown">
+                                            @Html.ActionLink("Visa", "Index", "Visa", new { area = "" }, new { @class = "" })
+                                            <ul>
+                                                <li><a href="page-service.html">Visa grid</a></li>
+                                                <li><a href="page-service-details.html">Visa Details</a></li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </li>
+
                                 <li class="dropdown">
-                                    <a href="#">Visa</a>
+                                    @Html.ActionLink("Country", "Index", "Country", new { area = "" }, new { @class = "" })
                                     <ul>
-                                        <li><a href="page-service.html">Visa grid</a></li>
-                                        <li><a href="page-service-details.html">Visa Details</a></li>
+                                        <li>@Html.ActionLink("CANADA", "Index", "Country", new { area = "", countryName = "CANADA" }, new { @class = "" })</li>
+                                        <li>@Html.ActionLink("AUSTRALIA", "Index", "Country", new { area = "", countryName = "AUSTRALIA" }, new { @class = "" })</li>
+                                        <li>@Html.ActionLink("U.K", "Index", "Country", new { area = "", countryName = "UK" }, new { @class = "" })</li>
+                                        <li>@Html.ActionLink("U.S.A", "Index", "Country", new { area = "", countryName = "USA" }, new { @class = "" })</li>
+                                        <li>@Html.ActionLink("GEORGIA", "Index", "Country", new { area = "", countryName = "GEORGIA" }, new { @class = "" })</li>
+                                        <li>@Html.ActionLink("Philippines", "Index", "Country", new { area = "", countryName = "Philippines" }, new { @class = "" })</li>
+                                        <li>@Html.ActionLink("KAZAKHSTAN", "Index", "Country", new { area = "", countryName = "KAZAKHSTAN" }, new { @class = "" })</li>
+                                        <li>@Html.ActionLink("GERMANY", "Index", "Country", new { area = "", countryName = "GERMANY" }, new { @class = "" })</li>
+                                        <li>@Html.ActionLink("SINGAPORE", "Index", "Country", new { area = "", countryName = "SINGAPORE" }, new { @class = "" })</li>
+                                        <li>@Html.ActionLink("NEWZEALAND", "Index", "Country", new { area = "", countryName = "NEWZEALAND" }, new { @class = "" })</li>
                                     </ul>
                                 </li>
                                 <li class="dropdown">
@@ -116,14 +116,20 @@
                                         <li><a href="page-course-details.html">Coaching Details</a></li>
                                     </ul>
                                 </li>
+
                                 <li class="dropdown">
-                                    <a href="#">News</a>
+                                    @Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "" })
                                     <ul>
-                                        <li><a href="news-grid.html">News Grid</a></li>
-                                        <li><a href="news-details.html">News Details</a></li>
+                                        <li>@Html.ActionLink("About Us", "About", "Home", new { area = "" }, new { @class = "" })</li>
+
+                                        <li>@Html.ActionLink("Our Team", "OurTeam", "Home", new { area = "" }, new { @class = "" })</li>
+                                        <li>@Html.ActionLink("News", "Index", "News", new { area = "" }, new { @class = "" })</li>
+                                        <li>@Html.ActionLink("FAQ", "Index", "FAQ", new { area = "" }, new { @class = "" })</li>
+
                                     </ul>
                                 </li>
                                 <li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "" })</li>
+                                @*@Html.Partial("_LoginPartial")*@
                             </ul>
                         </nav>
                         <!-- Main Menu End-->
@@ -170,7 +176,8 @@
                             <div class="contact-info-box">
                                 <i class="icon lnr-icon-phone-handset"></i>
                                 <span class="title">Call Now</span>
-                                <a href="tel:+92880098670">+ 91 ( 70444 ) 45074, + 91 ( 70444 ) 46074</a>
+                                <a href="tel:+917044445074">+91 (70444) 45074</a>
+                                <a href="tel:+917044446074">+91 (70444) 46074</a>
                             </div>
                         </li>
                         <li>
@@ -253,7 +260,7 @@
                         <li>
                             <i class="icon fa fa-phone-square"></i>
                             <span class="title">Phone:</span>
-                            <div class="text"><a href="tel:+91(70444)45074">+ 91 ( 70444 ) 45074,<br /> + 91 ( 70444 ) 46074</a></div>
+                            <div class="text"><a href="tel:+91(70444)45074">+ 91 ( 70444 ) 45074</a>, <a href="tel:+91(70444)46074">+ 91 ( 70444 ) 46074</a></div>                           
                         </li>
                         <li>
                             <i class="icon fa fa-envelope"></i>
