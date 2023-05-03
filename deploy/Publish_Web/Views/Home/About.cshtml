@@ -1,9 +1,17 @@
 ﻿@{
     ViewBag.Title = "About";
 }
-<main aria-labelledby="title">
-    <h2 id="title">@ViewBag.Title.</h2>
-    <h3>@ViewBag.Message</h3>
-
-    <p>Use this area to provide additional information.</p>
-</main>
+<!-- Start main-content -->
+<section class="page-title" style="background-image: url(../../media/images/background/page-title.jpg);">
+    <div class="auto-container">
+        <div class="title-outer">
+            <h1 class="title">About Us</h1>
+            <ul class="page-breadcrumb">
+                <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "" })</li>
+                <li>About</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- end main-content -->
+@Html.Action("AboutSection", "Home", new { currentPage = "about" })

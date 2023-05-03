@@ -13,5 +13,25 @@ namespace FAC.Web.Controllers
         {
             return View();
         }
+
+
+        public ActionResult UniversityCourseSelection()
+        {
+            return View();
+        }
+
+        public ActionResult AdmissionGuidance()
+        {
+            return View();
+        }
+        public ActionResult VisaAssistance()
+        {
+            return View();
+        }
+        public ActionResult CareerCounseling()
+        {
+            return View();
+        }
+
     }
 }

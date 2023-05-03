@@ -247,8 +247,11 @@
     <Compile Include="Controllers\CountryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Controllers\TestimonialController.cs" />
+    <Compile Include="Controllers\TrainingController.cs" />
+    <Compile Include="Controllers\VisaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -520,11 +523,30 @@
     <Content Include="Views\Shared\_HomeMainSlider.cshtml" />
     <Content Include="Views\Shared\_AboutPartial.cshtml" />
     <Content Include="Views\Country\Index.cshtml" />
+    <Content Include="Views\Shared\_WhyChooseUsPartial.cshtml" />
+    <Content Include="Views\Shared\_TrainingPartial.cshtml" />
+    <Content Include="Views\Shared\_ServicesPartial.cshtml" />
+    <Content Include="Views\Shared\_CountriesPartial.cshtml" />
+    <Content Include="Views\Shared\_ClientsPartial.cshtml" />
+    <Content Include="Views\Shared\_GalleryPartial.cshtml" />
+    <Content Include="Views\Shared\_TestimonialPartial.cshtml" />
+    <Content Include="Views\Shared\_ContactPartial.cshtml" />
+    <Content Include="Views\Shared\_NewsPartial.cshtml" />
+    <Content Include="Views\Visa\Index.cshtml" />
+    <Content Include="Views\News\Index.cshtml" />
+    <Content Include="Views\Services\Index.cshtml" />
+    <Content Include="Views\Training\Index.cshtml" />
+    <Content Include="Views\Training\CourseDetails.cshtml" />
+    <Content Include="Views\Training\PTE.cshtml" />
+    <Content Include="Views\Training\TOEFL.cshtml" />
+    <Content Include="Views\Training\IELTS.cshtml" />
+    <Content Include="Views\Training\EnglishSpoken.cshtml" />
+    <Content Include="Views\Testimonial\Index.cshtml" />
+    <Content Include="Views\Visa\VisaDetails.cshtml" />
+    <Content Include="Views\Visa\StudentVisa.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Services\" />
-    <Folder Include="Views\Testimonial\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

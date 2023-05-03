@@ -71,24 +71,44 @@
                                 <li class="dropdown">
                                     @Html.ActionLink("Services", "Index", "Services", new { area = "" }, new { @class = "" })
                                     <ul>
-                                        <li><a href="page-testimonial.html">Testimonial</a></li>
-                                        <li class="dropdown">
-                                            <a href="#">Shop</a>
-                                            <ul>
-                                                <li><a href="shop-products.html">Products</a></li>
-                                                <li><a href="shop-products-sidebar.html">Products with Sidebar</a></li>
-                                                <li><a href="shop-product-details.html">Product Details</a></li>
-                                                <li><a href="shop-cart.html">Cart</a></li>
-                                                <li><a href="shop-checkout.html">Checkout</a></li>
-                                            </ul>
-                                        </li>
+                                        <li>@Html.ActionLink("University & Course  Selection", "Index", "Services", new { area = "" }, new { @class = "" })</li>
+                                        <li>@Html.ActionLink("Admission Guidance", "Index", "Services", new { area = "" }, new { @class = "" })</li>
+                                        <li>@Html.ActionLink("Visa Assistance", "Index", "Services", new { area = "" }, new { @class = "" })</li>
+                                        <li>@Html.ActionLink("Career Counseling", "Index", "Services", new { area = "" }, new { @class = "" })</li>
 
-                                        <li><a href="page-404.html">Page 404</a></li>
+                                        @*Student Profile Analysis
+        Career Counseling
+        Course University Selection
+        Application Admission Assistance
+        Financial Aid Scholarship
+        Visa Guidance
+        Pre Departure Briefing
+        Post Arrival Assistance*@
+
+
+                                        @*<li class="dropdown">
+            <a href="#">Shop</a>
+            <ul>
+                <li><a href="shop-products.html">Products</a></li>
+                <li><a href="shop-products-sidebar.html">Products with Sidebar</a></li>
+                <li><a href="shop-product-details.html">Product Details</a></li>
+                <li><a href="shop-cart.html">Cart</a></li>
+                <li><a href="shop-checkout.html">Checkout</a></li>
+            </ul>
+        </li>
+
+        <li><a href="page-404.html">Page 404</a></li>*@
                                         <li class="dropdown">
                                             @Html.ActionLink("Visa", "Index", "Visa", new { area = "" }, new { @class = "" })
                                             <ul>
-                                                <li><a href="page-service.html">Visa grid</a></li>
-                                                <li><a href="page-service-details.html">Visa Details</a></li>
+                                                <li>@Html.ActionLink("Student Visa", "StudentVisa", "Visa", new { area = "", visaType = "StudentVisa" }, new { @class = "" })</li>
+                                                <li>@Html.ActionLink("Work Visa", "WorkVisa", "Visa", new { area = "", visaType = "WorkVisa" }, new { @class = "" })</li>
+                                                <li>@Html.ActionLink("Spouse Visa", "SpouseVisa", "Visa", new { area = "", visaType = "SpouseVisa" }, new { @class = "" })</li>
+                                                <li>@Html.ActionLink("Tourist Visa", "TouristVisa", "Visa", new { area = "", visaType = "TouristVisa" }, new { @class = "" })</li>
+                                                <li>@Html.ActionLink("Visitors Visa", "VisitorsVisa", "Visa", new { area = "", visaType = "VisitorsVisa" }, new { @class = "" })</li>
+
+                                                @*<li><a href="page-service.html">Visa grid</a></li>
+        <li><a href="page-service-details.html">Visa Details</a></li>*@
                                             </ul>
                                         </li>
                                     </ul>
@@ -109,11 +129,13 @@
                                         <li>@Html.ActionLink("NEWZEALAND", "Index", "Country", new { area = "", countryName = "NEWZEALAND" }, new { @class = "" })</li>
                                     </ul>
                                 </li>
-                                <li class="dropdown">
-                                    <a href="#">Coaching</a>
+                                <li class="dropdown">                                   
+                                    @Html.ActionLink("Coaching", "Index", "Training", new { area = "" }, new { @class = "" })
                                     <ul>
-                                        <li><a href="page-course.html">Coaching grid</a></li>
-                                        <li><a href="page-course-details.html">Coaching Details</a></li>
+                                        <li>@Html.ActionLink("IELTS", "IELTS", "Training", new { area = "", courseName = "IELTS" }, new { @class = "" })</li>
+                                        <li>@Html.ActionLink("PTE", "PTE", "Training", new { area = "", courseName = "PTE" }, new { @class = "" })</li>
+                                        <li>@Html.ActionLink("TOEFL", "TOEFL", "Training", new { area = "", courseName = "TOEFL" }, new { @class = "" })</li>
+                                        <li>@Html.ActionLink("English Spoken", "EnglishSpoken", "Training", new { area = "", courseName = "EnglishSpoken" }, new { @class = "" })</li>
                                     </ul>
                                 </li>
 
@@ -125,7 +147,7 @@
                                         <li>@Html.ActionLink("Our Team", "OurTeam", "Home", new { area = "" }, new { @class = "" })</li>
                                         <li>@Html.ActionLink("News", "Index", "News", new { area = "" }, new { @class = "" })</li>
                                         <li>@Html.ActionLink("FAQ", "Index", "FAQ", new { area = "" }, new { @class = "" })</li>
-
+                                        <li>@Html.ActionLink("Testimonial", "Index", "Testimonial", new { area = "" }, new { @class = "" })</li>
                                     </ul>
                                 </li>
                                 <li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "" })</li>
