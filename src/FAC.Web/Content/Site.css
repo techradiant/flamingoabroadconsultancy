@@ -10924,10 +10924,55 @@ Page Title
   color: var(--text-color-bg-theme-color2);
 }
 
+.services-details__content .key-points-list .single-item {
+    position: relative;
+    display: block;
+    border: 1px solid #e1e8e4;
+    padding: 16px 30px 16px 53px;
+    margin-bottom: 20px;
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+
+    .services-details__content .key-points-list .single-item .icon-box {
+        color: var(--theme-color1);
+        position: absolute;
+        left: 20px;
+        top: 16px;
+        font-size: 18px;
+        -webkit-transition: all 600ms ease;
+        transition: all 600ms ease;
+    }
+
+    .services-details__content .key-points-list .single-item .title {
+        display: block;
+        margin: 0;
+        font-size: 16px;
+        line-height: 32px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+        .services-details__content .key-points-list .single-item .title:hover {
+            color: var(--text-color-bg-theme-color2);
+        }
+
+    .services-details__content .key-points-list .single-item:hover {
+        background-color: var(--theme-color2);
+        color: var(--text-color-bg-theme-color2);
+    }
+
+        .services-details__content .key-points-list .single-item:hover .icon-box {
+            color: var(--text-color-bg-theme-color2);
+        }
+
+
+
+
 .service-list li {
-  position: relative;
-  display: block;
-  margin-bottom: 10px;
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
 }
 .service-list li:last-child {
   margin-bottom: 0px;
