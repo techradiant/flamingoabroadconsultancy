@@ -5,7 +5,15 @@
     <title>@ViewBag.Title - Flamingo Abroad Consultancy Services</title>
 
     <!-- Stylesheets -->
-    @Styles.Render("~/Content/css")
+    @*@Styles.Render("~/Content/css")*@
+
+    @Styles.Render("~/Content/bootstrap-css")
+    @Styles.Render("~/Content/revolution-css")
+    <!--@Styles.Render("~/plugins/revolution/css/settings.css")--><!-- REVOLUTION SETTINGS STYLES -->
+    <!--@Styles.Render("~/plugins/revolution/css/layers.css")--><!-- REVOLUTION LAYERS STYLES -->
+    <!--@Styles.Render("~/plugins/revolution/css/navigation.css")--><!-- REVOLUTION NAVIGATION STYLES -->
+    @Styles.Render("~/Content/site-css")
+
     @Scripts.Render("~/bundles/modernizr")
 
     <link rel="shortcut icon" href="media/images/favicon.png" type="image/x-icon">
@@ -77,27 +85,27 @@
                                         <li>@Html.ActionLink("Career Counseling", "Index", "Services", new { area = "" }, new { @class = "" })</li>
 
                                         @*Student Profile Analysis
-        Career Counseling
-        Course University Selection
-        Application Admission Assistance
-        Financial Aid Scholarship
-        Visa Guidance
-        Pre Departure Briefing
-        Post Arrival Assistance*@
+                                            Career Counseling
+                                            Course University Selection
+                                            Application Admission Assistance
+                                            Financial Aid Scholarship
+                                            Visa Guidance
+                                            Pre Departure Briefing
+                                            Post Arrival Assistance*@
 
 
                                         @*<li class="dropdown">
-            <a href="#">Shop</a>
-            <ul>
-                <li><a href="shop-products.html">Products</a></li>
-                <li><a href="shop-products-sidebar.html">Products with Sidebar</a></li>
-                <li><a href="shop-product-details.html">Product Details</a></li>
-                <li><a href="shop-cart.html">Cart</a></li>
-                <li><a href="shop-checkout.html">Checkout</a></li>
-            </ul>
-        </li>
+                                                <a href="#">Shop</a>
+                                                <ul>
+                                                    <li><a href="shop-products.html">Products</a></li>
+                                                    <li><a href="shop-products-sidebar.html">Products with Sidebar</a></li>
+                                                    <li><a href="shop-product-details.html">Product Details</a></li>
+                                                    <li><a href="shop-cart.html">Cart</a></li>
+                                                    <li><a href="shop-checkout.html">Checkout</a></li>
+                                                </ul>
+                                            </li>
 
-        <li><a href="page-404.html">Page 404</a></li>*@
+                                            <li><a href="page-404.html">Page 404</a></li>*@
                                         <li class="dropdown">
                                             @Html.ActionLink("Visa", "Index", "Visa", new { area = "" }, new { @class = "" })
                                             <ul>
@@ -108,7 +116,7 @@
                                                 <li>@Html.ActionLink("Visitors Visa", "VisitorsVisa", "Visa", new { area = "", visaType = "VisitorsVisa" }, new { @class = "" })</li>
 
                                                 @*<li><a href="page-service.html">Visa grid</a></li>
-        <li><a href="page-service-details.html">Visa Details</a></li>*@
+                                                    <li><a href="page-service-details.html">Visa Details</a></li>*@
                                             </ul>
                                         </li>
                                     </ul>
@@ -129,7 +137,7 @@
                                         <li>@Html.ActionLink("NEWZEALAND", "Index", "Country", new { area = "", countryName = "NEWZEALAND" }, new { @class = "" })</li>
                                     </ul>
                                 </li>
-                                <li class="dropdown">                                   
+                                <li class="dropdown">
                                     @Html.ActionLink("Coaching", "Index", "Training", new { area = "" }, new { @class = "" })
                                     <ul>
                                         <li>@Html.ActionLink("IELTS", "IELTS", "Training", new { area = "", courseName = "IELTS" }, new { @class = "" })</li>
@@ -168,7 +176,7 @@
                                     <span class="icon lnr lnr-icon-search"></span>
                                 </button>
                             </div>
-                            
+
                             <a href="@Url.Action("Contact", "Home", new { area = "" })" class="theme-btn btn-style-one"><span class="btn-title">Book Consultation</span></a>
 
                             <!-- Mobile Nav toggler -->
@@ -282,7 +290,7 @@
                         <li>
                             <i class="icon fa fa-phone-square"></i>
                             <span class="title">Phone:</span>
-                            <div class="text"><a href="tel:+91(70444)45074">+ 91 ( 70444 ) 45074</a>, <a href="tel:+91(70444)46074">+ 91 ( 70444 ) 46074</a></div>                           
+                            <div class="text"><a href="tel:+91(70444)45074">+ 91 ( 70444 ) 45074</a>, <a href="tel:+91(70444)46074">+ 91 ( 70444 ) 46074</a></div>
                         </li>
                         <li>
                             <i class="icon fa fa-envelope"></i>
@@ -340,7 +348,7 @@
                                         <li><a href="#">University & Course Selection</a></li>
                                         <li><a href="#">Admission Guidance</a></li>
                                         <li><a href="#">Visa Assistance</a></li>
-                                        <li><a href="#">Career Counseling</a></li>                                       
+                                        <li><a href="#">Career Counseling</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -418,6 +426,18 @@
     @Scripts.Render("~/bundles/popper")
     <!--Revolution Slider-->
     @Scripts.Render("~/bundles/revolution-slider")
+    @*@Scripts.Render("~/plugins/revolution/js/jquery.themepunch.revolution.min.js")
+    @Scripts.Render("~/plugins/revolution/js/jquery.themepunch.tools.min.js")
+    @Scripts.Render("~/plugins/revolution/js/extensions/revolution.extension.actions.min.js")
+    @Scripts.Render("~/plugins/revolution/js/extensions/revolution.extension.carousel.min.js")
+    @Scripts.Render("~/plugins/revolution/js/extensions/revolution.extension.kenburn.min.js")
+    @Scripts.Render("~/plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js")
+    @Scripts.Render("~/plugins/revolution/js/extensions/revolution.extension.migration.min.js")
+    @Scripts.Render("~/plugins/revolution/js/extensions/revolution.extension.navigation.min.js")
+    @Scripts.Render("~/plugins/revolution/js/extensions/revolution.extension.parallax.min.js")
+    @Scripts.Render("~/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js")
+    @Scripts.Render("~/plugins/revolution/js/extensions/revolution.extension.video.min.js")
+    @Scripts.Render("~/Scripts/main-slider-script.js"));*@
     <!--Revolution Slider-->
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/Scripts/jquery.fancybox.js")

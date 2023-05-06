@@ -26,13 +26,24 @@ namespace FAC.Web
 
             bundles.Add(new Bundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js"));
-            
 
-            bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/plugins/revolution/css/settings.css",//< !--REVOLUTION SETTINGS STYLES-- >
-                       "~/plugins/revolution/css/layers.css",//<!-- REVOLUTION LAYERS STYLES -->
-                       "~/plugins/revolution/css/navigation.css",//<!-- REVOLUTION NAVIGATION STYLES -->
+
+            //bundles.Add(new StyleBundle("~/Content/css").Include(
+            //          "~/Content/bootstrap.css",
+            //          "~/plugins/revolution/css/settings.css",//< !--REVOLUTION SETTINGS STYLES-- >
+            //           "~/plugins/revolution/css/layers.css",//<!-- REVOLUTION LAYERS STYLES -->
+            //           "~/plugins/revolution/css/navigation.css",//<!-- REVOLUTION NAVIGATION STYLES -->
+            //          "~/Content/site.css"));
+            bundles.Add(new StyleBundle("~/Content/bootstrap-css").Include(
+                "~/Content/bootstrap.css"));
+
+            bundles.Add(new StyleBundle("~/Content/revolution-css").Include(                   
+                    "~/plugins/revolution/css/settings.css",//< !--REVOLUTION SETTINGS STYLES-- >
+                     "~/plugins/revolution/css/layers.css",//<!-- REVOLUTION LAYERS STYLES -->
+                     "~/plugins/revolution/css/navigation.css"//<!-- REVOLUTION NAVIGATION STYLES -->
+                    ));
+
+            bundles.Add(new StyleBundle("~/Content/site-css").Include( 
                       "~/Content/site.css"));
 
             bundles.Add(new StyleBundle("~/bundles/popper").Include(
