@@ -40,6 +40,12 @@
                             </div>
                         </div>
                     </div>
+                    @if (ViewBag.CurrentPage == "home")
+                    {
+                        <div class="btm-box">
+                            <a href="@Url.Action("About", "Home", new { area = "" })" class="theme-btn btn-style-one"><span class="btn-title">Discover More</span></a>
+                        </div>
+                    }
                 </div>
             </div>
 
