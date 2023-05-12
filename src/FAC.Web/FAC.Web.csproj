@@ -545,6 +545,7 @@
     <Content Include="Views\Testimonial\Index.cshtml" />
     <Content Include="Views\Visa\VisaDetails.cshtml" />
     <Content Include="Views\Visa\StudentVisa.cshtml" />
+    <Content Include="Views\Visa\WorkVisa.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
