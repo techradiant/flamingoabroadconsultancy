@@ -1,16 +1,17 @@
 ﻿
 @{
-    ViewBag.Title = "StudentVisa";
+    ViewBag.Title = "WorkVisa";
 }
 <!-- Start main-content -->
 <section class="page-title" style="background-image: url(../../media/images/background/page-title.jpg);">
     <div class="auto-container">
         <div class="title-outer">
-            <h1 class="title">Visa Details</h1>
+            <h1 class="title"> Work Visa </h1>
             <ul class="page-breadcrumb">
                 <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "" })</li>
                 <li>>@Html.ActionLink("Visa", "Index", "Visa", new { area = "" }, new { @class = "" })</li>
-                <li>Student Visa</li>
+               <li>Work Visa</li>
+                
             </ul>
         </div>
     </div>
@@ -29,8 +30,8 @@
                              data-wow-delay="0.1s" data-wow-duration="1200m">
                             <div class="service-list">
                                 <ul>
-                                    <li><a href="@Url.Action("StudentVisa", "Visa", new { area = "" })" class="current"><i class="fas fa-angle-right"></i><span>Student Visa</span></a></li>
-                                    <li><a href="@Url.Action("WorkVisa", "Visa", new { area = "" })"><i class="fas fa-angle-right"></i><span>Work Visa</span></a></li>
+                                    <li><a href="@Url.Action("StudentVisa", "Visa", new { area = "" })" ><i class="fas fa-angle-right"></i><span>Student Visa</span></a></li>
+                                    <li><a href="@Url.Action("WorkVisa", "Visa", new { area = "" })" class="current"><i class="fas fa-angle-right"></i><span>Work Visa</span></a></li>
                                     <li><a href="@Url.Action("SpouseVisa", "Visa", new { area = "" })"><i class="fas fa-angle-right"></i><span>Spouse Visa</span></a></li>
                                     <li><a href="@Url.Action("TouristVisa", "Visa", new { area = "" })"><i class="fas fa-angle-right"></i><span>Tourist Visa</span></a></li>
                                     <li><a href="@Url.Action("VisitorsVisa", "Visa", new { area = "" })"><i class="fas fa-angle-right"></i><span>Visitors Visa</span></a></li>
@@ -69,55 +70,19 @@
             <!--Start Services Details Content-->
             <div class="col-xl-8 col-lg-8">
                 <div class="services-details__content">
-                    <img src="~/media/images/resource/service-details.jpg" alt="" />
-                    <h2 class="mt-4">Visa Overview</h2>
+                    <img src="~/media/images/resource/service-2.jpg" alt=""  />
+                    <h2 class="mt-4"> Work Visa Overview</h2>
                     <p>
-                        A student visa is a legal immigration document issued to students by another country that allows them to study for a certain period of time. Student visas are commonly used by students at colleges, universities, and specialty institutions. Prospective students are generally required to apply for and obtain a student visa before they start school in the host country. These visas are considered non-immigrant visas, which means holders must abide by certain rules to retain their status and stay in the country. Being granted a student visa doesn't necessarily grant individuals the same rights and privileges as citizens, such as voting.
+                       Work visas are permits that allow individuals to travel to another country to work there. In most cases, a work visa or permit is mandatory to accept employment in a foregin state.There are some exceptions, such as in blocks of countries with a policy of freedom of movement (like the EU).
+                    </p>
+                    <p>
+                        Work visas are usually temporary, but may be renewed. Some countries issue permanent work permits or allow holders to change to a residence visa after a certain period of time. 
+                    </p>
+                    <p>
+                        Various countries have a different system in which foregin nationals must first apply for a long-stay visas then obtain a work permit once they arrive in the country.
                     </p>
 
                     <div class="content mt-40">
-                        <div class="text">
-                            <h3>Key Points</h3>
-                        </div>
-                        <div class="key-points-list">
-                            <div class="row clearfix">
-                                <div class="col-lg-12 col-md-12 col-sm-12 column">
-                                    <div class="single-item">
-                                        <div class="icon-box"><i class="fas fa-check-circle"></i></div>
-                                        <span class="title">A student visa is a legal document that allows individuals to pursue their education in another country.</span>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 column">
-                                    <div class="single-item">
-                                        <div class="icon-box"><i class="fas fa-check-circle"></i></div>
-                                        <span class="title">These visas are commonly used by post-secondary students or those who intend to pursue specialty studies.</span>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 column">
-                                    <div class="single-item">
-                                        <div class="icon-box"><i class="fas fa-check-circle"></i></div>
-                                        <span class="title">Student visas aren't automatically granted, which means prospective students must apply for one with the appropriate department of the country where they intend to study.</span>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 column">
-                                    <div class="single-item">
-                                        <div class="icon-box"><i class="fas fa-check-circle"></i></div>
-                                        <span class="title">
-                                            Students must be accepted, enrolled, and able to support themselves financially while in school in order to get a student visa.
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 column">
-                                    <div class="single-item">
-                                        <div class="icon-box"><i class="fas fa-check-circle"></i></div>
-                                        <span class="title">
-                                            Being approved for a visa doesn't necessarily grant the same rights as citizens in the host country.
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                     <div class="content mt-40">
                         <div class="text">
