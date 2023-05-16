@@ -545,6 +545,11 @@
     <Content Include="Views\Testimonial\Index.cshtml" />
     <Content Include="Views\Visa\VisaDetails.cshtml" />
     <Content Include="Views\Visa\StudentVisa.cshtml" />
+    <Content Include="Views\Visa\WorkVisa.cshtml" />
+    <Content Include="Views\Visa\TouristVisa.cshtml" />
+    <Content Include="Views\Visa\SpouseVisa.cshtml" />
+    <Content Include="Views\Visa\VisitorsVisa.cshtml" />
+    <Content Include="Views\Services\UniversityCourseSelection.cshtml" />
     <Content Include="Views\Country\Australia.cshtml" />
     <Content Include="Views\Country\Canada.cshtml" />
     <Content Include="Views\Country\Germany.cshtml" />
