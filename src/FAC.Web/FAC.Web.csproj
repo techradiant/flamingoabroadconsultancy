@@ -545,6 +545,16 @@
     <Content Include="Views\Testimonial\Index.cshtml" />
     <Content Include="Views\Visa\VisaDetails.cshtml" />
     <Content Include="Views\Visa\StudentVisa.cshtml" />
+    <Content Include="Views\Country\Australia.cshtml" />
+    <Content Include="Views\Country\Canada.cshtml" />
+    <Content Include="Views\Country\Germany.cshtml" />
+    <Content Include="Views\Country\UK.cshtml" />
+    <Content Include="Views\Country\USA.cshtml" />
+    <Content Include="Views\Country\Georgia.cshtml" />
+    <Content Include="Views\Country\Philippines.cshtml" />
+    <Content Include="Views\Country\Kazakhstan.cshtml" />
+    <Content Include="Views\Country\Singapore.cshtml" />
+    <Content Include="Views\Country\NewZealand.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

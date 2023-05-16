@@ -13,5 +13,45 @@ namespace FAC.Web.Controllers
         {
             return View();
         }
+        public ActionResult Canada()
+        {
+            return View();
+        }
+        public ActionResult Australia()
+        {
+            return View();
+        }
+        public ActionResult UK()
+        {
+            return View();
+        }
+        public ActionResult USA()
+        {
+            return View();
+        }
+        public ActionResult Georgia()
+        {
+            return View();
+        }
+        public ActionResult Philippines()
+        {
+            return View();
+        }
+        public ActionResult Kazakhstan()
+        {
+            return View();
+        }
+        public ActionResult Germany()
+        {
+            return View();
+        }
+        public ActionResult Singapore()
+        {
+            return View();
+        }
+        public ActionResult NewZealand()
+        {
+            return View();
+        }
     }
 }

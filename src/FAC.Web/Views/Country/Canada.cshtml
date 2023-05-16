@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "Canada";
+}
+
+<!-- Start main-content -->
+<section class="page-title" style="background-image: url(../media/images/background/page-title.jpg);">
+    <div class="auto-container">
+        <div class="title-outer">
+            <h1 class="title">Country Details</h1>
+            <ul class="page-breadcrumb">
+                <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "" })</li>
+                <li>@Html.ActionLink("Country", "Index", "Country", new { area = "" }, new { @class = "" })</li>
+                <li>Canada</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- end main-content -->
+<!--Countries Details Start-->
+<section class="country-details">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <div class="country-details__img"> <img src="~/media/images/resource/country-details.jpg" alt=""> </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="country-content">
+                    <h3>Canada</h3>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are gossage of Lorem Ipsum, you nee there</p>
+                    <ul class="country-details-list">
+                        <li>
+                            <span>Country</span>
+                            <span>Canada</span>
+                        </li>
+                        <li>
+                            <span>Languages Spoken</span>
+                            <span>English</span>
+                        </li>
+                        <li>
+                            <span>Visa Requirements</span>
+                            <span>Personal Documents Required</span>
+                        </li>
+                        <li>
+                            <span>Area (km2)</span>
+                            <span>84.000 km2</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Countries Details End-->
+@Html.Partial("_countriesPartial", new ViewDataDictionary(this.ViewData) { { "currentPage", "courntry" } })

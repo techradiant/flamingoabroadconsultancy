@@ -6,7 +6,7 @@
 @Html.Action("AboutSection", "Home", new { currentPage = "home" })
 @Html.Partial("_trainingPartial")
 @Html.Partial("_servicesPartial")
-@Html.Partial("_countriesPartial")
+@Html.Partial("_countriesPartial", new ViewDataDictionary(this.ViewData) { { "currentPage", "home" } })
 @Html.Partial("_clientsPartial")
 @Html.Partial("_galleryPartial")
 @Html.Partial("_contactPartial")

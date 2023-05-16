@@ -1,4 +1,5 @@
 ﻿
+
 @{
     ViewBag.Title = "Index";
 }
@@ -6,7 +7,7 @@
 <section class="page-title" style="background-image: url(../media/images/background/page-title.jpg);">
     <div class="auto-container">
         <div class="title-outer">
-            <h1 class="title">Country Grid</h1>
+            <h1 class="title">Country</h1>
             <ul class="page-breadcrumb">
                 <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "" })</li>                
                 <li>Country</li>
@@ -24,61 +25,7 @@
                 <div class="country-block">
                     <div class="inner-box">
                         <div class="flag"><img src="~/media/images/resource/flag-1.png" alt=""></div>
-                        <a href="page-country-details.html" class="theme-btn">Australia</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <!-- Country Block -->
-                <div class="country-block">
-                    <div class="inner-box">
-                        <div class="flag"><img src="~/media/images/resource/flag-2.png" alt=""></div>
-                        <a href="page-country-details.html" class="theme-btn">Germany</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <!-- Country Block -->
-                <div class="country-block">
-                    <div class="inner-box">
-                        <div class="flag"><img src="~/media/images/resource/flag-3.png" alt=""></div>
-                        <a href="page-country-details.html" class="theme-btn">Brazil</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <!-- Country Block -->
-                <div class="country-block">
-                    <div class="inner-box">
-                        <div class="flag"><img src="~/media/images/resource/flag-5.png" alt=""></div>
-                        <a href="page-country-details.html" class="theme-btn">England</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <!-- Country Block -->
-                <div class="country-block">
-                    <div class="inner-box">
-                        <div class="flag"><img src="~/media/images/resource/flag-5.png" alt=""></div>
-                        <a href="page-country-details.html" class="theme-btn">England</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <!-- Country Block -->
-                <div class="country-block">
-                    <div class="inner-box">
-                        <div class="flag"><img src="~/media/images/resource/flag-6.png" alt=""></div>
-                        <a href="page-country-details.html" class="theme-btn">India</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <!-- Country Block -->
-                <div class="country-block">
-                    <div class="inner-box">
-                        <div class="flag"><img src="~/media/images/resource/flag-2.png" alt=""></div>
-                        <a href="page-country-details.html" class="theme-btn">Germany</a>
+                        @Html.ActionLink("Canada", "Canada", "Country", new { area = "" }, new { @class = "theme-btn" })
                     </div>
                 </div>
             </div>
@@ -87,11 +34,84 @@
                 <div class="country-block">
                     <div class="inner-box">
                         <div class="flag"><img src="~/media/images/resource/flag-1.png" alt=""></div>
-                        <a href="page-country-details.html" class="theme-btn">Australia</a>
+                        @Html.ActionLink("Australia", "Australia", "Country", new { area = "" }, new { @class = "theme-btn" })
                     </div>
                 </div>
             </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <!-- Country Block -->
+                <div class="country-block">
+                    <div class="inner-box">
+                        <div class="flag"><img src="~/media/images/resource/flag-5.png" alt=""></div>
+                        @Html.ActionLink("UK", "UK", "Country", new { area = "" }, new { @class = "theme-btn" })                        
+                    </div>
+                </div>
             </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <!-- Country Block -->
+                <div class="country-block">
+                    <div class="inner-box">
+                        <div class="flag"><img src="~/media/images/resource/flag-2.png" alt=""></div>
+                        @Html.ActionLink("USA", "USA", "Country", new { area = "" }, new { @class = "theme-btn" })
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <!-- Country Block -->
+                <div class="country-block">
+                    <div class="inner-box">
+                        <div class="flag"><img src="~/media/images/resource/flag-3.png" alt=""></div>
+                        @Html.ActionLink("Georgia", "Georgia", "Country", new { area = "" }, new { @class = "theme-btn" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <!-- Country Block -->
+                <div class="country-block">
+                    <div class="inner-box">
+                        <div class="flag"><img src="~/media/images/resource/flag-5.png" alt=""></div>
+                        @Html.ActionLink("Philippines", "Philippines", "Country", new { area = "" }, new { @class = "theme-btn" })
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <!-- Country Block -->
+                <div class="country-block">
+                    <div class="inner-box">
+                        <div class="flag"><img src="~/media/images/resource/flag-6.png" alt=""></div>
+                        @Html.ActionLink("Kazakhstan", "Kazakhstan", "Country", new { area = "" }, new { @class = "theme-btn" })
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <!-- Country Block -->
+                <div class="country-block">
+                    <div class="inner-box">
+                        <div class="flag"><img src="~/media/images/resource/flag-2.png" alt=""></div>
+                        @Html.ActionLink("Germany", "Germany", "Country", new { area = "" }, new { @class = "theme-btn" })
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <!-- Country Block -->
+                <div class="country-block">
+                    <div class="inner-box">
+                        <div class="flag"><img src="~/media/images/resource/flag-2.png" alt=""></div>
+                        @Html.ActionLink("Singapore", "Singapore", "Country", new { area = "" }, new { @class = "theme-btn" })
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <!-- Country Block -->
+                <div class="country-block">
+                    <div class="inner-box">
+                        <div class="flag"><img src="~/media/images/resource/flag-2.png" alt=""></div>
+                        @Html.ActionLink("NewZealand", "NewZealand", "Country", new { area = "" }, new { @class = "theme-btn" })
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
 </section>
 <!-- End Gallery Section -->
