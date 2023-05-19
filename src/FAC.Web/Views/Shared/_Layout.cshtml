@@ -334,11 +334,11 @@
                                 <div class="footer-widget col-lg-4 col-md-4 col-ms-12">
                                     <h6 class="widget-title">Visa</h6>
                                     <ul class="user-links">
-                                        <li>@Html.ActionLink("Student Visa", "Home", "Visa", new { area = "" }, new { @class = "" })</li>
-                                        <li>@Html.ActionLink("Work visa", "Home", "Visa", new { area = "" }, new { @class = "" })</li>
-                                        <li>@Html.ActionLink("Spouse visa", "Home", "Visa", new { area = "" }, new { @class = "" })</li>
-                                        <li>@Html.ActionLink("Tourist visa", "Home", "Visa", new { area = "" }, new { @class = "" })</li>
-                                        <li>@Html.ActionLink("Visitors Visa", "Home", "Visa", new { area = "" }, new { @class = "" })</li>
+                                        <li>@Html.ActionLink("Student Visa", "StudentVisa", "Visa", new { area = "" }, new { @class = "" })</li>
+                                        <li>@Html.ActionLink("Work visa", "WorkVisa", "Visa", new { area = "" }, new { @class = "" })</li>
+                                        <li>@Html.ActionLink("Spouse visa", "SpouseVisa", "Visa", new { area = "" }, new { @class = "" })</li>
+                                        <li>@Html.ActionLink("Tourist visa", "TouristVisa", "Visa", new { area = "" }, new { @class = "" })</li>
+                                        <li>@Html.ActionLink("Visitors Visa", "VisitorsVisa", "Visa", new { area = "" }, new { @class = "" })</li>
                                     </ul>
                                 </div>
 
@@ -347,7 +347,7 @@
                                     <ul class="user-links">
                                         <li><a href="#">University & Course Selection</a></li>
                                         <li><a href="#">Admission Guidance</a></li>
-                                        <li><a href="#">Visa Assistance</a></li>
+                                        <li><a href="@Url.Action("StudentVisa", "Visa", new { area = "" })">Visa Assistance</a></li>
                                         <li><a href="#">Career Counseling</a></li>
                                     </ul>
                                 </div>
