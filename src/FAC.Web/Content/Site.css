@@ -12396,6 +12396,39 @@ Sidebar
   width: 50%;
 }
 
+
+.country-details .country-university__list {
+  position: relative;
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.country-details .country-university__list ul {
+  position: relative;
+  display: block;
+}
+.country-details .country-university__list ul li {
+  position: relative;
+  display: block;
+  margin-bottom: 2px;
+}
+.country-details .country-university__list ul li:last-child {
+  margin-bottom: 0px;
+}
+.country-details .country-university__list ul li p {
+  margin: 0;
+  font-weight: 600;
+  color: var(--headings-color);
+}
+.country-details .country-university__list ul li p span:before {
+  position: relative;
+  display: inline-block;
+  color: var(--theme-color1);
+  font-size: 17px;
+  line-height: 17px;
+  margin-right: 11px;
+  top: 2px;
+}
 /***
 
 ==================================================================
@@ -12757,3 +12790,4 @@ Sidebar
 .footer-bottom .copyright-text a:hover {
   color: #ffffff;
 }
+

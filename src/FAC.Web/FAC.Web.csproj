@@ -462,6 +462,7 @@
     <Content Include="fonts\flaticon_visa.ttf" />
     <Content Include="fonts\linearicons-free.ttf" />
     <Content Include="fonts\revicons\revicons.woff" />
+    <None Include="Properties\PublishProfiles\FTPProfile.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bxslider.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
