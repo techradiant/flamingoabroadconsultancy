@@ -10,6 +10,7 @@
             <h1 class="title">Services</h1>
             <ul class="page-breadcrumb">
                 <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "" })</li>
+                
                 <li>Services</li>
             </ul>
         </div>
@@ -25,13 +26,13 @@
             <div class="service-block col-lg-4 col-md-6 col-sm-12">
                 <div class="inner-box">
                     <div class="image-box">
-                        <figure class="image"><a href="page-service-details.html"><img src="~/media/images/resource/service-1.jpg" alt=""></a></figure>
+                        <figure class="image"><a href="@Url.Action("UniversityCourseSelection", "Services", new { area = "" })"><img src="~/media/images/resource/service-1.jpg" alt=""></a></figure>
                         <i class="icon fa fa-graduation-cap"></i>
                         <h6 class="title">University & Course Selection</h6>
                     </div>
                     <div class="content-box">
-                        <h6 class="title"><a href="page-service-details.html">University & Course Selection</a></h6>
-                        <div class="text">A student visa is a legal immigration document issued to students by another country...</div>
+                        <h6 class="title"><a href="@Url.Action("UniversityCourseSelection", "Services", new { area = "" })"</a></h6>
+                        <div class="text">We have to a tendency to believe the idea that smart looking of any website..</div>
                         <a href="@Url.Action("UniversityCourseSelection", "Services", new { area = "" })" class="read-more">More <i class="fa fa-long-arrow-right"></i></a>
                     </div>
                 </div>
@@ -41,14 +42,14 @@
             <div class="service-block col-lg-4 col-md-6 col-sm-12">
                 <div class="inner-box">
                     <div class="image-box">
-                        <figure class="image"><a href="page-service-details.html"><img src="~/media/images/resource/service-2.jpg" alt=""></a></figure>
+                        <figure class="image"><a href="@Url.Action("AdmissionGuidance", "Services", new { area = "" })"><img src="~/media/images/resource/service-2.jpg" alt=""></a></figure>
                         <i class="icon fa fa-briefcase"></i>
                         <h6 class="title">Admission Guidance</h6>
                     </div>
                     <div class="content-box">
-                        <h6 class="title"><a href="page-service-details.html">Admission Guidance</a></h6>
-                        <div class="text">Work visas are permits that allow individuals to travel to another country to work there. </div>
-                        <a href="page-service-details.html" class="read-more">More <i class="fa fa-long-arrow-right"></i></a>
+                        <h6 class="title"><a href="@Url.Action("AdmissionGuidance", "Services", new { area = "" })">Admission Guidance</a></h6>
+                        <div class="text">We have to a tendency to believe the idea that smart looking of any website. </div>
+                        <a href="@Url.Action("AdmissionGuidance", "Services", new { area = "" })" class="read-more">More <i class="fa fa-long-arrow-right"></i></a>
                     </div>
                 </div>
             </div>           
@@ -57,14 +58,14 @@
             <div class="service-block col-lg-4 col-md-6 col-sm-12">
                 <div class="inner-box">
                     <div class="image-box">
-                        <figure class="image"><a href="page-service-details.html"><img src="~/media/images/resource/service-5.jpg" alt=""></a></figure>
+                        <figure class="image"><a href="@Url.Action("CareerCounseling", "Services", new { area = "" })"><img src="~/media/images/resource/service-5.jpg" alt=""></a></figure>
                         <i class="icon fa fa-home"></i>
                         <h6 class="title">Career Counseling</h6>
                     </div>
                     <div class="content-box">
-                        <h6 class="title"><a href="page-service-details.html">Career Counseling</a></h6>
+                        <h6 class="title"><a href="@Url.Action("CareerCounseling", "Services", new { area = "" })">Career Counseling</a></h6>
                         <div class="text">We have to a tendency to believe the idea that smart looking of any website.</div>
-                        <a href="page-service-details.html" class="read-more">More <i class="fa fa-long-arrow-right"></i></a>
+                        <a href="@Url.Action("CareerCounseling", "Services", new { area = "" })" class="read-more">More <i class="fa fa-long-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
