@@ -245,6 +245,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CountryController.cs" />
+    <Compile Include="Controllers\FAQController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\NewsController.cs" />
@@ -433,6 +434,7 @@
     <Content Include="Media\images\resource\training-4.jpg" />
     <Content Include="Media\images\resource\training-5.jpg" />
     <Content Include="Media\images\resource\training-6.jpg" />
+    <Content Include="Media\images\resource\uni &amp; course.png" />
     <Content Include="plugins\revolution\css\layers.css" />
     <Content Include="plugins\revolution\css\navigation.css" />
     <Content Include="plugins\revolution\css\settings.css" />
@@ -561,6 +563,9 @@
     <Content Include="Views\Country\Kazakhstan.cshtml" />
     <Content Include="Views\Country\Singapore.cshtml" />
     <Content Include="Views\Country\NewZealand.cshtml" />
+    <Content Include="Views\FAQ\Index.cshtml" />
+    <Content Include="Views\Services\AdmissionGuidance.cshtml" />
+    <Content Include="Views\Services\CareerCounseling.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
