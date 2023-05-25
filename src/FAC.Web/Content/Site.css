@@ -10965,7 +10965,9 @@ Page Title
         .services-details__content .key-points-list .single-item:hover .icon-box {
             color: var(--text-color-bg-theme-color2);
         }
-
+.services-details__content_img{
+    width:100%;
+}
 
 
 
@@ -12790,4 +12792,5 @@ Sidebar
 .footer-bottom .copyright-text a:hover {
   color: #ffffff;
 }
+.
 

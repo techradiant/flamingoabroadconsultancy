@@ -405,6 +405,7 @@
     <Content Include="Media\images\resource\products\thumb-1.jpg" />
     <Content Include="Media\images\resource\products\thumb-2.jpg" />
     <Content Include="Media\images\resource\products\thumb-3.jpg" />
+    <Content Include="Media\images\resource\products\visa assist.jpg" />
     <Content Include="Media\images\resource\project-thumb-1.jpg" />
     <Content Include="Media\images\resource\project-thumb-2.jpg" />
     <Content Include="Media\images\resource\project-thumb-3.jpg" />
@@ -445,6 +446,8 @@
     <Content Include="Media\images\resource\training-5.jpg" />
     <Content Include="Media\images\resource\training-6.jpg" />
     <Content Include="Media\images\resource\uni &amp; course.png" />
+    <Content Include="Media\images\resource\visa assist.jpg" />
+    <Content Include="Media\images\resource\visa.jpg" />
     <Content Include="plugins\revolution\css\layers.css" />
     <Content Include="plugins\revolution\css\navigation.css" />
     <Content Include="plugins\revolution\css\settings.css" />
@@ -576,6 +579,7 @@
     <Content Include="Views\FAQ\Index.cshtml" />
     <Content Include="Views\Services\AdmissionGuidance.cshtml" />
     <Content Include="Views\Services\CareerCounseling.cshtml" />
+    <Content Include="Views\Services\VisaAssistance.cshtml" />
     <Content Include="Views\Country\Tajikistan.cshtml" />
   </ItemGroup>
   <ItemGroup>
