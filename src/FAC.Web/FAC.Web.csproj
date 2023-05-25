@@ -365,6 +365,16 @@
     <Content Include="Media\images\resource\flag-4.png" />
     <Content Include="Media\images\resource\flag-5.png" />
     <Content Include="Media\images\resource\flag-6.png" />
+    <Content Include="Media\images\resource\FlagAustralia.png" />
+    <Content Include="Media\images\resource\FlagCanada.png" />
+    <Content Include="Media\images\resource\FlagGeorgia.png" />
+    <Content Include="Media\images\resource\FlagGermany.png" />
+    <Content Include="Media\images\resource\FlagKazakhstan.png" />
+    <Content Include="Media\images\resource\FlagNewZealand.png" />
+    <Content Include="Media\images\resource\FlagPhilippines.png" />
+    <Content Include="Media\images\resource\FlagSingapore.png" />
+    <Content Include="Media\images\resource\FlagUK.png" />
+    <Content Include="Media\images\resource\FlagUSA.png" />
     <Content Include="Media\images\resource\gallery-1.jpg" />
     <Content Include="Media\images\resource\gallery-2.jpg" />
     <Content Include="Media\images\resource\gallery-3.jpg" />
@@ -559,16 +569,18 @@
     <Content Include="Views\Country\UK.cshtml" />
     <Content Include="Views\Country\USA.cshtml" />
     <Content Include="Views\Country\Georgia.cshtml" />
-    <Content Include="Views\Country\Philippines.cshtml" />
+    <Content Include="Views\Country\Switzerland.cshtml" />
     <Content Include="Views\Country\Kazakhstan.cshtml" />
     <Content Include="Views\Country\Singapore.cshtml" />
     <Content Include="Views\Country\NewZealand.cshtml" />
     <Content Include="Views\FAQ\Index.cshtml" />
     <Content Include="Views\Services\AdmissionGuidance.cshtml" />
     <Content Include="Views\Services\CareerCounseling.cshtml" />
+    <Content Include="Views\Country\Tajikistan.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Media\images\countries\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
