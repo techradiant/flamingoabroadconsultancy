@@ -1,0 +1,80 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<!-- Start main-content -->
+<section ction class="page-title" style="background-image: url(../../media/images/background/page-title.jpg);">
+    <div class="auto-container">
+        <div class="title-outer">
+            <h1 class="title">Team Grid</h1>
+            <ul class="page-breadcrumb">
+                <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "" })</li>
+                
+                <li>Team </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- end main-content -->
+<!-- Team Section -->
+<section class="team-section pb-60">
+    <div class="auto-container">
+        <div class="row">
+            <!-- Team block -->
+            <div class="team-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                <div class="inner-box">
+                    <div class="image-box">
+                        <figure class="image"><a href="@Url.Action("TeamDetails", "Team", new { area = "" })"><img src="~/media/images/resource/team-1.jpg" alt=""></a></figure>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <span class="designation">Manager</span>
+                        <h4 class="name"><a href="@Url.Action("TeamDetails", "Team", new { area = "" })">Jessica Brown</a></h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team block -->
+            <div class="team-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="300ms">
+                <div class="inner-box">
+                    <div class="image-box">
+                        <figure class="image"><a href="@Url.Action("TeamDetails", "Team", new { area = "" })"><img src="~/media/images/resource/team-2.jpg" alt=""></a></figure>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <span class="designation">Manager</span>
+                        <h4 class="name"><a href="@Url.Action("TeamDetails", "Team", new { area = "" })">Mike Hardson</a></h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team block -->
+            <div class="team-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="600ms">
+                <div class="inner-box">
+                    <div class="image-box">
+                        <figure class="image"><a href="@Url.Action("TeamDetails", "Team", new { area = "" })"><img src="~/media/images/resource/team-3.jpg" alt=""></a></figure>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <span class="designation">Manager</span>
+                        <h4 class="name"><a href=@Url.Action("TeamDetails", "Team", new { area = "" })">Aleesha Rose</a></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Team Section -->

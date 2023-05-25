@@ -6,15 +6,15 @@ using System.Web.Mvc;
 
 namespace FAC.Web.Controllers
 {
-    public class NewsController : Controller
+    public class TeamController : Controller
     {
-        // GET: News
+        // GET: Team
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult NewsDetails()
+        public ActionResult TeamDetails()
         {
             return View();
         }

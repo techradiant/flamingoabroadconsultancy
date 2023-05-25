@@ -250,6 +250,7 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Controllers\ServicesController.cs" />
+    <Compile Include="Controllers\TeamController.cs" />
     <Compile Include="Controllers\TestimonialController.cs" />
     <Compile Include="Controllers\TrainingController.cs" />
     <Compile Include="Controllers\VisaController.cs" />
@@ -581,6 +582,9 @@
     <Content Include="Views\Services\CareerCounseling.cshtml" />
     <Content Include="Views\Services\VisaAssistance.cshtml" />
     <Content Include="Views\Country\Tajikistan.cshtml" />
+    <Content Include="Views\News\NewsDetails.cshtml" />
+    <Content Include="Views\Team\Index.cshtml" />
+    <Content Include="Views\Team\TeamDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
