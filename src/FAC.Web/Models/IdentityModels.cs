@@ -26,7 +26,8 @@ namespace FAC.Web.Models
         // Your Extended Properties
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string AvatarUrl { get; set; }        
+        public string AvatarUrl { get; set; }
+        //public int? EmployeeId { get; set; }
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
@@ -51,6 +52,10 @@ namespace FAC.Web.Models
             modelBuilder.Entity<IdentityRole>().ToTable("Roles");
             modelBuilder.Entity<ApplicationUser>().ToTable("Users");
         }
+
+        public DbSet<Employee> Employees { get; set; }
+        public DbSet<Department> Departments { get; set; }
+
     }
 
     public class IdentityDbInit : DropCreateDatabaseIfModelChanges<ApplicationDbContext>// DropCreateDatabaseAlways<ApplicationDbContext>
