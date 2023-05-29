@@ -9,11 +9,17 @@ namespace FAC.Web.Controllers
 {
     public class TeamController : Controller
     {
+        ApplicationDbContext _context;
+        public TeamController()
+        {
+            _context = new ApplicationDbContext();
+        }
         // GET: Team
         public ActionResult Index()
         {
-            //IEnumerable<Employee> teamMembers = _context.Employees.Where(emp=> emp.IncludeInTeamList).OrderBy(emp=> emp.TeamListViewOrder);
-            IEnumerable<Employee> teamMembers = new List<Employee>();
+          
+            IEnumerable<Employee> teamMembers = _context.Employees.Where(emp=> emp.IncludeInTeamList).OrderBy(emp=> emp.TeamListViewOrder);
+            
             return View(teamMembers);            
         }
 
