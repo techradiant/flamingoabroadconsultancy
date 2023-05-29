@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewBag.Title = "Philippines";
+}
+
+<!-- Start main-content -->
+<section class="page-title" style="background-image: url(../media/images/background/page-title.jpg);">
+    <div class="auto-container">
+        <div class="title-outer">
+            <h1 class="title">Philippines</h1>
+            <ul class="page-breadcrumb">
+                <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "" })</li>
+                <li>@Html.ActionLink("Country", "Index", "Country", new { area = "" }, new { @class = "" })</li>
+                <li>Philippines</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- end main-content -->
+<!--Countries Details Start-->
+<section class="country-details">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <div class="country-details__img"> <img src="~/Media/images/countries/philippines.png" alt=""> </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="country-content">
+                    <h3>Philippines</h3>
+                    <p>The Philippines officially the Republic of the Philippines is an archipelagic country in Southeast Asia. In the western Pacific Ocean, it consists of 7,641 islands which are broadly categorized in three main geographical divisions from north to south: Luzon, Visayas, and Mindanao. The Philippines is bounded by the South China Sea to the west, the Philippine Sea to the east, and the Celebes Sea to the south. It shares maritime borders with Taiwan to the north, Japan to the northeast, Palau to the east and southeast, Indonesia to the south, Malaysia to the southwest, Vietnam to the west, and China to the northwest. It is the world's thirteenth-most-populous country, with diverse ethnicities and cultures. Manila is the country's capital, and its largest city is Quezon City; both are within Metro Manila.</p>
+                    <ul class="country-details-list">
+                        <li>
+                            <span>Country</span>
+                            <span>Philippines</span>
+                        </li>
+                        <li>
+                            <span>Official Language</span>
+                            <span>Filipino & English</span>
+                        </li>
+                        <li>
+                            <span>capital</span>
+                            <span>Manila</span>
+                        </li>
+                        <li>
+                            <span>Area (km2)</span>
+                            <span>300,000 km2</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-lg-12 col-md-12">
+                <div class="country-university__list">
+                    <h3>Philippines</h3>
+                    <ul class="list-unstyled">
+                        <li><p><span class="fa fa-arrow-right"></span>University of Zurich</p></li>
+                        <li><p><span class="fa fa-arrow-right"></span>ETH Zurich</p></li>
+                        <li><p><span class="fa fa-arrow-right"></span>University of Geneva</p></li>
+                        <li><p><span class="fa fa-arrow-right"></span>University of Basel</p></li>
+                        <li><p><span class="fa fa-arrow-right"></span>University of Bern</p></li>
+                        <li><p><span class="fa fa-arrow-right"></span>University of Lausanne</p></li>
+                        <li><p><span class="fa fa-arrow-right"></span>University of Fribourg</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Countries Details End-->
+@Html.Partial("_countriesPartial", new ViewDataDictionary(this.ViewData) { { "currentPage", "courntry" } })
+
+
