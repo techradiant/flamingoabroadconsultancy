@@ -1,4 +1,4 @@
-﻿
+﻿@model IEnumerable<FAC.Web.Models.Employee>
 @{
     ViewBag.Title = "Index";
 }
@@ -21,23 +21,28 @@
 <section class="team-section pb-60">
     <div class="auto-container">
         <div class="row">
-            <!-- Team block -->
-            <div class="team-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-                <div class="inner-box">
-                    <div class="image-box">
-                        <figure class="image"><a href="@Url.Action("TeamDetails", "Team", new { area = "" })"><img src="~/media/images/resource/team-1.jpg" alt=""></a></figure>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-facebook"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
+            @foreach (var teamMember in Model)
+            {
+                <!-- Team block -->
+                <div class="team-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><a href="@Url.Action("TeamDetails", "Team", new { area = "", @teamMemberId = teamMember.EmployeeId })"><img src="~/media/images/resource/team-1.jpg" alt=""></a></figure>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="info-box">
+                            <span class="designation">@teamMember.EmployeeDesignation</span>
+                            <h4 class="name"><a href="@Url.Action("TeamDetails", "Team", new { area = "", @teamMemberId = teamMember.EmployeeId })"> Hariom Kaushik </a></h4>
                         </div>
                     </div>
-                    <div class="info-box">
-                        <span class="designation">Managing Director</span>
-                        <h4 class="name"><a href="@Url.Action("TeamDetails", "Team", new { area = "" })"> Hariom Kaushik </a></h4>
-                    </div>
                 </div>
-            </div>
+            }
+
+
 
             <!-- Team block -->
             <div class="team-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="300ms">
