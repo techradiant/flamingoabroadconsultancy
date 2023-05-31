@@ -326,6 +326,16 @@
     <Content Include="Media\images\background\4.jpg" />
     <Content Include="Media\images\background\5.jpg" />
     <Content Include="Media\images\background\page-title.jpg" />
+    <Content Include="Media\images\countries\Australia.jpg" />
+    <Content Include="Media\images\countries\Canada.jpg" />
+    <Content Include="Media\images\countries\Georgia.jpg" />
+    <Content Include="Media\images\countries\Germany.jpg" />
+    <Content Include="Media\images\countries\Kazakhstan.jpg" />
+    <Content Include="Media\images\countries\NewZealand.jpg" />
+    <Content Include="Media\images\countries\philippines.png" />
+    <Content Include="Media\images\countries\Singapore.jpg" />
+    <Content Include="Media\images\countries\UnitedKingdom.jpg" />
+    <Content Include="Media\images\countries\USA.jpg" />
     <Content Include="Media\images\favicon.png" />
     <Content Include="Media\images\icons\arrow-up.png" />
     <Content Include="Media\images\icons\dotted-map-2.png" />
@@ -610,11 +620,10 @@
     <Content Include="Views\News\NewsDetails.cshtml" />
     <Content Include="Views\Team\Index.cshtml" />
     <Content Include="Views\Team\TeamDetails.cshtml" />
+    <Content Include="Views\Country\Philippines.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Media\images\countries\" />
-    <Folder Include="NewFolder1\" />
     <Folder Include="Views\EmployeeController\" />
   </ItemGroup>
   <ItemGroup>

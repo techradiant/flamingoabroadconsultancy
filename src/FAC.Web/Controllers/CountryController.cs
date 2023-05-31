@@ -33,6 +33,10 @@ namespace FAC.Web.Controllers
         {
             return View();
         }
+        public ActionResult Philippines()
+        {
+            return View();
+        }
         public ActionResult Switzerland()
         {
             return View();

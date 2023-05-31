@@ -12439,9 +12439,9 @@ Sidebar
 
 ***/
 .main-footer {
-  position: relative;
-  background-color: var(--bg-theme-color1);
-  overflow: hidden;
+    position: relative;
+    background-color: var(--bg-theme-color1);
+    overflow: hidden;
 }
 .main-footer .footer-upper {
   position: relative;
