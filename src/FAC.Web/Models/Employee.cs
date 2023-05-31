@@ -45,5 +45,17 @@ namespace FAC.Web.Models
 
         [Display(Name = "Team List View Order")]
         public int TeamListViewOrder { get; set; }
+
+
+        [Display(Name = "Twitter Url")]
+        public string TwitterUrl { get; set; }
+
+
+        [Display(Name = "Facebook Url")]
+        public string FacebookUrl { get; set; }
+
+
+        [Display(Name = "Instagram Url")]
+        public int InstagramUrl { get; set; }
     }
 }
