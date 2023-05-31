@@ -8,7 +8,7 @@ namespace FAC.Web.Models
 {
     public class Employee
     {
-
+        internal object Project;
 
         [Key]
         public int EmployeeId { get; set; }
@@ -57,5 +57,22 @@ namespace FAC.Web.Models
 
         [Display(Name = "Instagram Url")]
         public int InstagramUrl { get; set; }
+
+        private object employee;
+
+        public object GetEmployee()
+        {
+            return employee;
+        }
+
+        internal void SetEmployee(object value)
+        {
+            employee = value;
+        }
+
+        internal void SaveChanges()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

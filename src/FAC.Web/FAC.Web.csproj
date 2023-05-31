@@ -245,7 +245,8 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CountryController.cs" />
-    <Compile Include="Controllers\EmployeeControllerController.cs" />
+    <Compile Include="Controllers\EmployeeController.cs" />
+    <Compile Include="Controllers\EmployeeDbContext.cs" />
     <Compile Include="Controllers\FAQController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -621,10 +622,11 @@
     <Content Include="Views\Team\Index.cshtml" />
     <Content Include="Views\Team\TeamDetails.cshtml" />
     <Content Include="Views\Country\Philippines.cshtml" />
+    <Content Include="Views\Employee\Index.cshtml" />
+    <Content Include="Views\Employee\EmployeeForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\EmployeeController\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

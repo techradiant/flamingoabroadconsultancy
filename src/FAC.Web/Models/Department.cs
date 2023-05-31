@@ -12,5 +12,10 @@ namespace FAC.Web.Models
         public int DepartmentId { get; set; }
 
         public string DepartmentName { get; set; }
+
+        internal IEnumerable<Department> ToList()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
