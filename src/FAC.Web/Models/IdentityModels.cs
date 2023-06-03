@@ -54,7 +54,7 @@ namespace FAC.Web.Models
         }
 
         public DbSet<Employee> Employees { get; set; }
-        public DbSet<Department> Departments { get; set; }
+        public DbSet<Department1> Departments { get; set; }
 
     }
 

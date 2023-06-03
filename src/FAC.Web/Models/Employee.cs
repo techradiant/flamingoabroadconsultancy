@@ -16,7 +16,7 @@ namespace FAC.Web.Models
         public string EmployeeName { get; set; }
         [Display(Name = "Designation")]
         public string EmployeeDesignation { get; set; }
-        public Department Department { get; set; }
+        public Department1 Department { get; set; }
         [Display(Name = "Address")]
         public string EmployeeAddress { get; set; }
       
@@ -41,7 +41,7 @@ namespace FAC.Web.Models
         public string ProfilePhotoUrl { get; set; }
 
         [Display(Name = "Include In Team List")]
-        public Boolean IncludeInTeamList { get; set; }
+        public bool IncludeInTeamList { get; set; }
 
         [Display(Name = "Team List View Order")]
         public int TeamListViewOrder { get; set; }

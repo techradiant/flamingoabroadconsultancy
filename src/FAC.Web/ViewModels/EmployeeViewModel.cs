@@ -8,7 +8,7 @@ namespace FAC.Web.ViewModels
 {
     public class EmployeeViewModel
     {
-        public IEnumerable<Department> Department { get; set; }
+        public IEnumerable<Department1> Department { get; set; }
         public Employee Employee { get; set; }
     }
 }

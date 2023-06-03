@@ -10,7 +10,7 @@ using System.Data.Entity;
 
 namespace FAC.Web.Controllers
 {
-    public class EmployeeController: Controller
+    public class EmployeeController : Controller
     {
         private readonly ApplicationDbContext _dbContext;
 
@@ -34,6 +34,58 @@ namespace FAC.Web.Controllers
             };
             return View("EmployeeForm", employeeViewModel);
         }
+        [HttpPost]
+        public ActionResult AddEmployees(Employee employee)
+        {
+            if (!ModelState.IsValid)
+            {
+                var existingEmployee = this._dbContext.Employees.FirstOrDefault(x => x.EmployeeId == employee.EmployeeId);
+                if (existingEmployee == null)
+                {
+                    existingEmployee = new Employee()
+                    {
+                        EmployeeId = employee.EmployeeId,
+                        EmployeeName = employee.EmployeeName,
+                        City = employee.City,
+
+                    };
+                }
+                var employeeViewModel = new EmployeeViewModel()
+                {
+                    Department = this._dbContext.Departments.ToList(),
+                    Employee = existingEmployee
+                };
+                return View("EmployeeForm", employeeViewModel);
+            }
+
+            if (employee.EmployeeId == 0)
+                this._dbContext.Employees.Add(employee);
+
+            else
+            {
+                var employeesDb = this._dbContext.Employees.FirstOrDefault(x => x.EmployeeId == employee.EmployeeId);
+                employeesDb.EmployeeName = employee.EmployeeName;
+                employeesDb.EmployeeDesignation = employee.EmployeeDesignation;
+                employeesDb.EmployeeAddress = employee.EmployeeAddress;
+                employeesDb.EmployeePhone = employee.EmployeePhone;
+                employeesDb.EmployeeGender = employee.EmployeeGender;
+                employeesDb.City = employee.City;
+
+                employeesDb.CompanyName = employee.CompanyName;
+                employeesDb.PinCode = employee.PinCode;
+                employeesDb.EmployeeDiscription = employee.EmployeeDiscription;
+                employeesDb.DepartmentId = employee.DepartmentId;
+                employeesDb.ProfilePhotoUrl = employee.ProfilePhotoUrl;
+                employeesDb.IncludeInTeamList = employee.IncludeInTeamList;
+                employeesDb.TeamListViewOrder = employee.TeamListViewOrder;
+                employeesDb.TwitterUrl = employee.TwitterUrl;
+                employeesDb.FacebookUrl = employee.FacebookUrl;
+                employeesDb.InstagramUrl = employee.InstagramUrl;
+            }
+
+            this._dbContext.SaveChanges();
+            return RedirectToAction("Index", "Employee");
+        }
 
         public ActionResult Edit(int id)
         {
@@ -53,7 +105,23 @@ namespace FAC.Web.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return RedirectToAction("AddEmployees", "Employee");
+                var existingEmployee = this._dbContext.Employees.FirstOrDefault(x => x.EmployeeId == employee.EmployeeId);
+                if (existingEmployee == null)
+                {
+                    existingEmployee = new Employee()
+                    {
+                        EmployeeId = employee.EmployeeId,
+                        EmployeeName= employee.EmployeeName,
+                        City = employee.City,
+
+                    };
+                }
+                var employeeViewModel = new EmployeeViewModel()
+                {
+                    Department = this._dbContext.Departments.ToList(),
+                    Employee = existingEmployee
+                };
+                return View("EmployeeForm", employeeViewModel);
             }
 
             if (employee.EmployeeId == 0)
@@ -65,13 +133,13 @@ namespace FAC.Web.Controllers
                 employeesDb.EmployeeName = employee.EmployeeName;
                 employeesDb.EmployeeDesignation = employee.EmployeeDesignation;
                 employeesDb.EmployeeAddress = employee.EmployeeAddress;
-                employeesDb.EmployeeDesignation = employee.EmployeeDesignation;
                 employeesDb.EmployeePhone = employee.EmployeePhone;
                 employeesDb.EmployeeGender = employee.EmployeeGender;
                 employeesDb.City = employee.City;
-                employeesDb.Project = employee.Project;
+
                 employeesDb.CompanyName = employee.CompanyName;
                 employeesDb.PinCode = employee.PinCode;
+                employeesDb.EmployeeDiscription = employee.EmployeeDiscription;
                 employeesDb.DepartmentId = employee.DepartmentId;
                 employeesDb.ProfilePhotoUrl = employee.ProfilePhotoUrl;
                 employeesDb.IncludeInTeamList = employee.IncludeInTeamList;

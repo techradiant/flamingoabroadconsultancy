@@ -246,7 +246,6 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CountryController.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
-    <Compile Include="Controllers\EmployeeDbContext.cs" />
     <Compile Include="Controllers\FAQController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -279,9 +278,13 @@
     <Compile Include="Migrations\202305311413009_Employee1.designer.cs">
       <DependentUpon>202305311413009_Employee1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202306011012411_UpdateEmployee1.cs" />
+    <Compile Include="Migrations\202306011012411_UpdateEmployee1.designer.cs">
+      <DependentUpon>202306011012411_UpdateEmployee1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Department.cs" />
+    <Compile Include="Models\Department1.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -622,8 +625,8 @@
     <Content Include="Views\Team\Index.cshtml" />
     <Content Include="Views\Team\TeamDetails.cshtml" />
     <Content Include="Views\Country\Philippines.cshtml" />
-    <Content Include="Views\Employee\Index.cshtml" />
-    <Content Include="Views\Employee\EmployeeForm.cshtml" />
+    <Content Include="Views\Employee1\Index.cshtml" />
+    <Content Include="Views\Employee1\Employee1Form.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -670,6 +673,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202305311413009_Employee1.resx">
       <DependentUpon>202305311413009_Employee1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202306011012411_UpdateEmployee1.resx">
+      <DependentUpon>202306011012411_UpdateEmployee1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

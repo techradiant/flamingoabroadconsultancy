@@ -31,7 +31,14 @@
                         PinCode = c.Int(nullable: false),
                         EmployeeDiscription = c.String(),
                         DepartmentId = c.Int(nullable: false),
-                    })
+                        ProfilePhotoUrl =c.String(),
+                        IncludeInTeamList =c.String(),
+                        TeamListViewOrder = c.String(),
+                        TwitterUrl = c.String(),
+                        FacebookUrl = c.String(),
+                        InstagramUrl = c.String()
+
+                })
                 .PrimaryKey(t => t.EmployeeId)
                 .ForeignKey("dbo.Departments", t => t.DepartmentId, cascadeDelete: true)
                 .Index(t => t.DepartmentId);
