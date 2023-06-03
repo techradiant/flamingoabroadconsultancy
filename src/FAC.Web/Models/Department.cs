@@ -6,18 +6,10 @@ using System.Web;
 
 namespace FAC.Web.Models
 {
-    public class Department1
+    public class Department
     {
         [Key]
         public int DepartmentId { get; set; }
-
-
-
-        public string DepartmentName { get; set; }
-
-        internal IEnumerable<Department1> ToList()
-        {
-            throw new NotImplementedException();
-        }
+        public string DepartmentName { get; set; }        
     }
 }

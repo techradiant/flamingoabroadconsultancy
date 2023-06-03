@@ -27,7 +27,8 @@ namespace FAC.Web.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string AvatarUrl { get; set; }
-        //public int? EmployeeId { get; set; }
+        public int? EmployeeId { get; set; }
+        public Employee Employee { get; set; }
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
@@ -54,7 +55,7 @@ namespace FAC.Web.Models
         }
 
         public DbSet<Employee> Employees { get; set; }
-        public DbSet<Department1> Departments { get; set; }
+        public DbSet<Department> Departments { get; set; }
 
     }
 

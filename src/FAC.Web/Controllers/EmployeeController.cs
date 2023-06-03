@@ -73,7 +73,7 @@ namespace FAC.Web.Controllers
 
                 employeesDb.CompanyName = employee.CompanyName;
                 employeesDb.PinCode = employee.PinCode;
-                employeesDb.EmployeeDiscription = employee.EmployeeDiscription;
+                employeesDb.EmployeeDescription = employee.EmployeeDescription;
                 employeesDb.DepartmentId = employee.DepartmentId;
                 employeesDb.ProfilePhotoUrl = employee.ProfilePhotoUrl;
                 employeesDb.IncludeInTeamList = employee.IncludeInTeamList;
@@ -139,7 +139,7 @@ namespace FAC.Web.Controllers
 
                 employeesDb.CompanyName = employee.CompanyName;
                 employeesDb.PinCode = employee.PinCode;
-                employeesDb.EmployeeDiscription = employee.EmployeeDiscription;
+                employeesDb.EmployeeDescription = employee.EmployeeDescription;
                 employeesDb.DepartmentId = employee.DepartmentId;
                 employeesDb.ProfilePhotoUrl = employee.ProfilePhotoUrl;
                 employeesDb.IncludeInTeamList = employee.IncludeInTeamList;

@@ -7,8 +7,7 @@ using System.Web;
 namespace FAC.Web.Models
 {
     public class Employee
-    {
-        internal object Project;
+    {        
 
         [Key]
         public int EmployeeId { get; set; }
@@ -16,7 +15,7 @@ namespace FAC.Web.Models
         public string EmployeeName { get; set; }
         [Display(Name = "Designation")]
         public string EmployeeDesignation { get; set; }
-        public Department1 Department { get; set; }
+        public Department Department { get; set; }
         [Display(Name = "Address")]
         public string EmployeeAddress { get; set; }
       
@@ -31,8 +30,8 @@ namespace FAC.Web.Models
         public string CompanyName { get; set; }
         [Display(Name = "Pin Code")]
         public int PinCode { get; set; }
-        [Display(Name = "Discription")]
-        public string EmployeeDiscription { get; set; }
+        [Display(Name = "Description")]
+        public string EmployeeDescription { get; set; }
         [Display(Name = "Dept Name")]
 
         public int DepartmentId { get; set; }
@@ -57,22 +56,6 @@ namespace FAC.Web.Models
 
         [Display(Name = "Instagram Url")]
         public int InstagramUrl { get; set; }
-
-        private object employee;
-
-        public object GetEmployee()
-        {
-            return employee;
-        }
-
-        internal void SetEmployee(object value)
-        {
-            employee = value;
-        }
-
-        internal void SaveChanges()
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }
