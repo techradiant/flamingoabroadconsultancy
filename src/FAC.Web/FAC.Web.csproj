@@ -246,6 +246,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CountryController.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
+    <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\FAQController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -265,6 +266,10 @@
     <Compile Include="Migrations\202306031617221_UpdateDepartmentData.cs" />
     <Compile Include="Migrations\202306031617221_UpdateDepartmentData.designer.cs">
       <DependentUpon>202306031617221_UpdateDepartmentData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202306031632103_UpdateEmployeeInstagramUrl.cs" />
+    <Compile Include="Migrations\202306031632103_UpdateEmployeeInstagramUrl.designer.cs">
+      <DependentUpon>202306031632103_UpdateEmployeeInstagramUrl.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -609,8 +614,13 @@
     <Content Include="Views\Team\Index.cshtml" />
     <Content Include="Views\Team\TeamDetails.cshtml" />
     <Content Include="Views\Country\Philippines.cshtml" />
-    <Content Include="Views\Employee1\Index.cshtml" />
-    <Content Include="Views\Employee1\Employee1Form.cshtml" />
+    <Content Include="Views\Employee\Index.cshtml" />
+    <Content Include="Views\Employee\EmployeeForm.cshtml" />
+    <Content Include="Views\Employees\Create.cshtml" />
+    <Content Include="Views\Employees\Delete.cshtml" />
+    <Content Include="Views\Employees\Details.cshtml" />
+    <Content Include="Views\Employees\Edit.cshtml" />
+    <Content Include="Views\Employees\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -648,6 +658,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202306031617221_UpdateDepartmentData.resx">
       <DependentUpon>202306031617221_UpdateDepartmentData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202306031632103_UpdateEmployeeInstagramUrl.resx">
+      <DependentUpon>202306031632103_UpdateEmployeeInstagramUrl.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
