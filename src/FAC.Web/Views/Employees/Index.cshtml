@@ -3,121 +3,147 @@
 @{
     ViewBag.Title = "Index";
 }
+<!-- Start main-content -->
+<section class="page-title" style="background-image: url(../../media/images/background/page-title.jpg);">
+    <div class="auto-container">
+        <div class="title-outer">
+            <h1 class="title">Employees Details</h1>
+            <ul class="page-breadcrumb">
+                <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "" })</li>
 
-<h2>Index</h2>
+                <li>Employees Details</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- end main-content -->
+<!-- Section -->
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Index</h2>
+            </div>
+            <p>
+                <button  type="button" class="btn btn-outline-primary">@Html.ActionLink("Create New", "Create")</button> 
+            </p>
+            <table class="table table-bordered table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Department.DepartmentName)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.EmployeeName)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.EmployeeDesignation)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.EmployeeAddress)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.EmployeePhone)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.EmployeeGender)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.City)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.CompanyName)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.PinCode)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.EmployeeDescription)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.ProfilePhotoUrl)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.IncludeInTeamList)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.TeamListViewOrder)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.TwitterUrl)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.FacebookUrl)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.InstagramUrl)
+                        </th>
+                    </tr>
+                </thead>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Department.DepartmentName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.EmployeeName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.EmployeeDesignation)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.EmployeeAddress)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.EmployeePhone)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.EmployeeGender)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.City)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CompanyName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PinCode)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.EmployeeDescription)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ProfilePhotoUrl)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.IncludeInTeamList)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TeamListViewOrder)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TwitterUrl)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.FacebookUrl)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.InstagramUrl)
-        </th>
-        <th></th>
-    </tr>
+                @foreach (var item in Model)
+                {
+            <tbody>
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Department.DepartmentName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EmployeeName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EmployeeDesignation)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EmployeeAddress)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EmployeePhone)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EmployeeGender)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.City)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CompanyName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PinCode)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EmployeeDescription)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ProfilePhotoUrl)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IncludeInTeamList)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TeamListViewOrder)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TwitterUrl)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FacebookUrl)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.InstagramUrl)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.EmployeeId }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.EmployeeId }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.EmployeeId })
+                    </td>
+                </tr>
+            </tbody>
+                }
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Department.DepartmentName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.EmployeeName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.EmployeeDesignation)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.EmployeeAddress)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.EmployeePhone)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.EmployeeGender)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.City)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CompanyName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PinCode)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.EmployeeDescription)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ProfilePhotoUrl)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.IncludeInTeamList)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TeamListViewOrder)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TwitterUrl)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.FacebookUrl)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.InstagramUrl)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.EmployeeId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.EmployeeId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.EmployeeId })
-        </td>
-    </tr>
-}
-
-</table>
+            </table>
+        </div>
+    </div>
+</section>
+<!-- End of Section -->
