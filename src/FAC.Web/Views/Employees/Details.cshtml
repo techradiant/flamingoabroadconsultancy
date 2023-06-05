@@ -4,8 +4,21 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
 
+<!-- Start main-content -->
+<section class="page-title" style="background-image: url(../../media/images/background/page-title.jpg);">
+    <div class="auto-container">
+        <div class="title-outer">
+            <h1 class="title"> Employee Details</h1>
+            <ul class="page-breadcrumb">
+                <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "" })</li>
+                <li>@Html.ActionLink("Employees ", "Index", "Employees", new { area = "" }, new { @class = "" })</li>
+                <li>Employee Details</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- end main-content -->
 <div>
     <h4>Employee</h4>
     <hr />

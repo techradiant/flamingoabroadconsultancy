@@ -4,7 +4,20 @@
     ViewBag.Title = "Delete";
 }
 
-<h2>Delete</h2>
+<!-- Start main-content -->
+<section class="page-title" style="background-image: url(../../media/images/background/page-title.jpg);">
+    <div class="auto-container">
+        <div class="title-outer">
+            <h1 class="title">Delete Employee Record</h1>
+            <ul class="page-breadcrumb">
+                <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "" })</li>
+                <li>@Html.ActionLink("Employees ", "Index", "Employees", new { area = "" }, new { @class = "" })</li>
+                <li>Delete</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- end main-content -->
 
 <h3>Are you sure you want to delete this?</h3>
 <div>
@@ -141,7 +154,8 @@
 
     </dl>
 
-    @using (Html.BeginForm()) {
+    @using (Html.BeginForm())
+    {
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
