@@ -3,87 +3,82 @@
 @{
     ViewBag.Title = "Index";
 }
+
 <!-- Start main-content -->
 <section class="page-title" style="background-image: url(../../media/images/background/page-title.jpg);">
     <div class="auto-container">
         <div class="title-outer">
-            <h1 class="title">Employees Details</h1>
+            <h1 class="title">Employees</h1>
             <ul class="page-breadcrumb">
                 <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "" })</li>
-
-                <li>Employees Details</li>
+               
+                <li>Employees</li>
             </ul>
         </div>
     </div>
 </section>
 <!-- end main-content -->
-<!-- Section -->
-<section>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Index</h2>
-            </div>
-            <p>
-                <button  type="button" class="btn btn-outline-primary">@Html.ActionLink("Create New", "Create")</button> 
-            </p>
-            <table class="table table-bordered table-hover table-striped">
-                <thead>
-                    <tr>
-                        <th>
-                            @Html.DisplayNameFor(model => model.Department.DepartmentName)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.EmployeeName)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.EmployeeDesignation)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.EmployeeAddress)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.EmployeePhone)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.EmployeeGender)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.City)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.CompanyName)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.PinCode)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.EmployeeDescription)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.ProfilePhotoUrl)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.IncludeInTeamList)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.TeamListViewOrder)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.TwitterUrl)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.FacebookUrl)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.InstagramUrl)
-                        </th>
-                    </tr>
-                </thead>
 
-                @foreach (var item in Model)
-                {
-            <tbody>
+
+        <p>
+            @Html.ActionLink("Create New", "Create",)
+        </p>
+    <div class="container-fluid">
+        <table class="table-info table-striped table-bordered">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Department.DepartmentName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EmployeeName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EmployeeDesignation)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EmployeeAddress)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EmployeePhone)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EmployeeGender)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.City)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CompanyName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PinCode)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EmployeeDescription)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ProfilePhotoUrl)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.IncludeInTeamList)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TeamListViewOrder)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TwitterUrl)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FacebookUrl)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.InstagramUrl)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
                 <tr>
                     <td>
                         @Html.DisplayFor(modelItem => item.Department.DepartmentName)
@@ -139,11 +134,7 @@
                         @Html.ActionLink("Delete", "Delete", new { id = item.EmployeeId })
                     </td>
                 </tr>
-            </tbody>
-                }
+            }
 
-            </table>
-        </div>
+        </table>
     </div>
-</section>
-<!-- End of Section -->
