@@ -477,6 +477,12 @@
     <Content Include="Media\images\resource\uni &amp; course.png" />
     <Content Include="Media\images\resource\visa assist.jpg" />
     <Content Include="Media\images\resource\visa.jpg" />
+    <Content Include="Media\images\Team Profile\Deepika Malik.jpg" />
+    <Content Include="Media\images\Team Profile\IMG_20230608_102631.jpg" />
+    <Content Include="Media\images\Team Profile\Kajal.jpg" />
+    <Content Include="Media\images\Team Profile\Neeraj.jpg" />
+    <Content Include="Media\images\Team Profile\ravesh.jpg" />
+    <Content Include="Media\images\Team Profile\Sahil.jpg" />
     <Content Include="plugins\revolution\css\layers.css" />
     <Content Include="plugins\revolution\css\navigation.css" />
     <Content Include="plugins\revolution\css\settings.css" />
