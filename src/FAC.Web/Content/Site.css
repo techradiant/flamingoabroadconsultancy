@@ -12792,5 +12792,13 @@ Sidebar
 .footer-bottom .copyright-text a:hover {
   color: #ffffff;
 }
-.
+
+ /*Edit by Prakhar*/
+ .employee-table{
+
+ }
+.employee-table .emp-data {    
+    word-wrap: break-word;
+    max-width: 70px;
+}
 

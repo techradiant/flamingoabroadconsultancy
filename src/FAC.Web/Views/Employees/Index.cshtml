@@ -30,113 +30,113 @@
                 @Html.ActionLink("Create New", "Create", new {area = "" }, new { @class = "theme-btn btn-style-one" })
             </p>
 
-                <table class="table table-bordered table-info table-striped table-hover justify-content">
+                <table class="table table-bordered table-hover employee-table">
                     <tr>
-                        <th class="">
+                        <th class="emp-data">
                             @Html.DisplayNameFor(model => model.Department.DepartmentName)
                         </th>
-                        <th>
+                        <th class="emp-data">
                             @Html.DisplayNameFor(model => model.EmployeeName)
                         </th>
-                        <th>
+                        <th class="emp-data">
                             @Html.DisplayNameFor(model => model.EmployeeDesignation)
                         </th>
-                        <th>
+                        <th class="emp-data">
                             @Html.DisplayNameFor(model => model.EmployeeAddress)
                         </th>
-                        <th>
+                        <th class="emp-data">
                             @Html.DisplayNameFor(model => model.EmployeePhone)
                         </th>
-                        <th>
+                        <th class="emp-data">
                             @Html.DisplayNameFor(model => model.EmployeeGender)
                         </th>
-                        <th>
+                        <th class="emp-data">
                             @Html.DisplayNameFor(model => model.City)
                         </th>
-                        <th>
+                        <th class="emp-data"> 
                             @Html.DisplayNameFor(model => model.CompanyName)
                         </th>
-                        <th>
+                        <th class="emp-data">
                             @Html.DisplayNameFor(model => model.PinCode)
                         </th>
-                        <th>
+                        <th class="emp-data">
                             @Html.DisplayNameFor(model => model.EmployeeDescription)
                         </th>
-                        <th>
+                        <th class="emp-data">
                             @Html.DisplayNameFor(model => model.ProfilePhotoUrl)
                         </th>
-                        <th>
+                        <th class="emp-data"> 
                             @Html.DisplayNameFor(model => model.IncludeInTeamList)
                         </th>
-                        <th>
+                        <th class="emp-data">
                             @Html.DisplayNameFor(model => model.TeamListViewOrder)
                         </th>
-                        @*<th>
+                        <th class="emp-data">
                             @Html.DisplayNameFor(model => model.TwitterUrl)
                         </th>
-                        <th>
+                        <th class="emp-data">
                             @Html.DisplayNameFor(model => model.FacebookUrl)
                         </th>
-                        <th>
+                        <th class="emp-data">
                             @Html.DisplayNameFor(model => model.InstagramUrl)
-                        </th>*@
+                        </th>
                         <th></th>
                     </tr>
 
                     @foreach (var item in Model)
                     {
                         <tr>
-                            <td>
+                            <td class="emp-data">
                                 @Html.DisplayFor(modelItem => item.Department.DepartmentName)
                             </td>
-                            <td>
+                            <td class="emp-data">
                                 @Html.DisplayFor(modelItem => item.EmployeeName)
                             </td>
-                            <td>
+                            <td class="emp-data">
                                 @Html.DisplayFor(modelItem => item.EmployeeDesignation)
                             </td>
-                            <td>
+                            <td class="emp-data">
                                 @Html.DisplayFor(modelItem => item.EmployeeAddress)
                             </td>
-                            <td>
+                            <td class="emp-data">
                                 @Html.DisplayFor(modelItem => item.EmployeePhone)
                             </td>
-                            <td>
+                            <td class="emp-data">
                                 @Html.DisplayFor(modelItem => item.EmployeeGender)
                             </td>
-                            <td>
+                            <td class="emp-data">
                                 @Html.DisplayFor(modelItem => item.City)
                             </td>
-                            <td>
+                            <td class="emp-data">
                                 @Html.DisplayFor(modelItem => item.CompanyName)
                             </td>
-                            <td>
+                            <td class="emp-data">
                                 @Html.DisplayFor(modelItem => item.PinCode)
                             </td>
-                            <td>
+                            <td class="emp-data">
                                 @Html.DisplayFor(modelItem => item.EmployeeDescription)
                             </td>
-                            <td>
+                            <td class="emp-data">
                                 @Html.DisplayFor(modelItem => item.ProfilePhotoUrl)
                             </td>
-                            <td>
+                            <td class="emp-data">
                                 @Html.DisplayFor(modelItem => item.IncludeInTeamList)
                             </td>
-                            <td>
+                            <td class="emp-data">
                                 @Html.DisplayFor(modelItem => item.TeamListViewOrder)
                             </td>
-                            @*<td>
+                            <td class="emp-data">
                                 @Html.DisplayFor(modelItem => item.TwitterUrl)
                             </td>
-                            <td>
+                            <td class="emp-data">
                                 @Html.DisplayFor(modelItem => item.FacebookUrl)
                             </td>
-                            <td>
+                            <td class="emp-data">
                                 @Html.DisplayFor(modelItem => item.InstagramUrl)
-                            </td>*@
+                            </td>
                             <td>
-                                @Html.ActionLink("Edit", "Edit", new { id = item.EmployeeId }) 
-                                @Html.ActionLink("Details", "Details", new { id = item.EmployeeId }) 
+                                @Html.ActionLink("Edit", "Edit", new { id = item.EmployeeId }) |
+                                @Html.ActionLink("Details", "Details", new { id = item.EmployeeId }) |
                                 @Html.ActionLink("Delete", "Delete", new { id = item.EmployeeId })
                             </td>
                         </tr>
