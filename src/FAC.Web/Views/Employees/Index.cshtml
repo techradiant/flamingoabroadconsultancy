@@ -21,7 +21,7 @@
 <!-- Section -->
 <section>
     <div class="container-fluid">
-        <div class="row">
+        <div class="row table table-responsive-lg">
             <div class="col-md-12">
                 <h2>Employees Data</h2>
             </div>
@@ -30,7 +30,7 @@
                 @Html.ActionLink("Create New", "Create", new {area = "" }, new { @class = "theme-btn btn-style-one" })
             </p>
 
-                <table class="table table-bordered table-hover employee-table">
+                <table class="employee-table table table-bordered table-hover table-primary">
                     <tr>
                         <th class="emp-data">
                             @Html.DisplayNameFor(model => model.Department.DepartmentName)
@@ -80,7 +80,9 @@
                         <th class="emp-data">
                             @Html.DisplayNameFor(model => model.InstagramUrl)
                         </th>
-                        <th></th>
+                        <th class="emp-data">
+                            Buttons
+                        </th>
                     </tr>
 
                     @foreach (var item in Model)
@@ -134,9 +136,9 @@
                             <td class="emp-data">
                                 @Html.DisplayFor(modelItem => item.InstagramUrl)
                             </td>
-                            <td>
-                                @Html.ActionLink("Edit", "Edit", new { id = item.EmployeeId }) |
-                                @Html.ActionLink("Details", "Details", new { id = item.EmployeeId }) |
+                            <td class="emp-databtn">
+                                @Html.ActionLink("Edit", "Edit", new { id = item.EmployeeId }) &emsp;|&emsp;
+                                @Html.ActionLink("Details", "Details", new { id = item.EmployeeId }) &emsp;|&emsp;
                                 @Html.ActionLink("Delete", "Delete", new { id = item.EmployeeId })
                             </td>
                         </tr>

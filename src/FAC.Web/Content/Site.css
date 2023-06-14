@@ -12794,11 +12794,20 @@ Sidebar
 }
 
  /*Edit by Prakhar*/
- .employee-table{
-
- }
-.employee-table .emp-data {    
-    word-wrap: break-word;
-    max-width: 70px;
+.employee-table {
+    display: block;
+    overflow-x: auto;
+    /*word-wrap: break-word;*/
 }
+    .employee-table .emp-data {
+        /*text-align:justify;*/
+        word-wrap: break-word;
+        max-width: 150px;   
+        min-width:100px;
+    }
+    .employee-table .emp-databtn {
+        min-width:250px;  
+        background-color:azure;
+    }
+
 
