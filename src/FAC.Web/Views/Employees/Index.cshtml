@@ -119,7 +119,8 @@
                                 @Html.DisplayFor(modelItem => item.EmployeeDescription)
                             </td>
                             <td class="emp-data">
-                                @Html.DisplayFor(modelItem => item.ProfilePhotoUrl)
+                                <img class="team-list-img" src="@item.ProfilePhotoUrl" />
+                                
                             </td>
                             <td class="emp-data">
                                 @Html.DisplayFor(modelItem => item.IncludeInTeamList)
