@@ -144,6 +144,28 @@
                 </Div>
             </div>
             <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.ProfilePhotoUrl, htmlAttributes: new { @class = "control-label col-md-6" })
+                    <div class="col-md-12">
+                        @Html.EditorFor(model => model.ProfilePhotoUrl, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.ProfilePhotoUrl, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.IncludeInTeamList, htmlAttributes: new { @class = "control-label col-md-6" })
+                    <div class="col-md-12">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.IncludeInTeamList)
+                            @Html.ValidationMessageFor(model => model.IncludeInTeamList, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="row">
                 <Div class="col-md-4 col-sm-12">
                     <div class="form-group">
                         @Html.LabelFor(model => model.TwitterUrl, htmlAttributes: new { @class = "control-label col-md-6" })

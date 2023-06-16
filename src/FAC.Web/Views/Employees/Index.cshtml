@@ -59,9 +59,9 @@
                         <th class="emp-data">
                             @Html.DisplayNameFor(model => model.PinCode)
                         </th>
-                        <th class="emp-data">
+                        @*<th class="emp-data">
                             @Html.DisplayNameFor(model => model.EmployeeDescription)
-                        </th>
+                        </th>*@
                         <th class="emp-data">
                             @Html.DisplayNameFor(model => model.ProfilePhotoUrl)
                         </th>
@@ -115,9 +115,9 @@
                             <td class="emp-data">
                                 @Html.DisplayFor(modelItem => item.PinCode)
                             </td>
-                            <td class="emp-data">
+                            @*<td class="emp-data">
                                 @Html.DisplayFor(modelItem => item.EmployeeDescription)
-                            </td>
+                            </td>*@
                             <td class="emp-data">
                                 <img class="team-list-img" src="@item.ProfilePhotoUrl" />
                                 

@@ -478,11 +478,12 @@
     <Content Include="Media\images\resource\visa assist.jpg" />
     <Content Include="Media\images\resource\visa.jpg" />
     <Content Include="Media\images\Team Profile\Deepika Malik.jpg" />
-    <Content Include="Media\images\Team Profile\IMG_20230608_102631.jpg" />
-    <Content Include="Media\images\Team Profile\Kajal.jpg" />
-    <Content Include="Media\images\Team Profile\Neeraj.jpg" />
-    <Content Include="Media\images\Team Profile\ravesh.jpg" />
-    <Content Include="Media\images\Team Profile\Sahil.jpg" />
+    <Content Include="Media\images\Team Profile\Ekta Kalkal.jpg" />
+    <Content Include="Media\images\Team Profile\Hariom Kaushik.jpg" />
+    <Content Include="Media\images\Team Profile\Kajal Sangwan.jpg" />
+    <Content Include="Media\images\Team Profile\Neeraj Ndoria.jpg" />
+    <Content Include="Media\images\Team Profile\Ravesh Budhwar.jpg" />
+    <Content Include="Media\images\Team Profile\Sahil Budhwar.jpg" />
     <Content Include="plugins\revolution\css\layers.css" />
     <Content Include="plugins\revolution\css\navigation.css" />
     <Content Include="plugins\revolution\css\settings.css" />
