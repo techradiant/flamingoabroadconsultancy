@@ -29,8 +29,8 @@
                         <div class="image-box">
                             <figure class="image"><a href="@Url.Action("TeamDetails", "Team", new { area = "", @teamMemberId = teamMember.EmployeeId })"><img src="@teamMember.ProfilePhotoUrl" alt=""></a></figure>
                             <div class="social-links">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="@teamMember.TwitterUrl"><i class="fab fa-twitter"></i></a>
+                                <a href="@teamMember.FacebookUrl"><i class="fab fa-facebook"></i></a>
                                 <a href="@teamMember.InstagramUrl"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
