@@ -10,6 +10,7 @@ using FAC.Web.Models;
 
 namespace FAC.Web.Controllers
 {
+    [Authorize(Roles = "admin")]
     public class EmployeesController : Controller
     {
         private readonly ApplicationDbContext _dbContext;
