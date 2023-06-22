@@ -144,6 +144,28 @@
                 </Div>
             </div>
             <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.ProfilePhotoUrl, htmlAttributes: new { @class = "control-label col-md-6" })
+                        <div class="col-md-12">
+                            @Html.EditorFor(model => model.ProfilePhotoUrl, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.ProfilePhotoUrl, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.IncludeInTeamList, htmlAttributes: new { @class = "control-label col-md-6" })
+                        <div class="col-md-12">
+                            <div class="checkbox">
+                                @Html.EditorFor(model => model.IncludeInTeamList)
+                                @Html.ValidationMessageFor(model => model.IncludeInTeamList, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
                 <Div class="col-md-4 col-sm-12">
                     <div class="form-group">
                         @Html.LabelFor(model => model.TwitterUrl, htmlAttributes: new { @class = "control-label col-md-6" })
@@ -195,6 +217,51 @@
                     </div>
                 </Div>
             </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.ListeningExperience, htmlAttributes: new { @class = "control-label col-md-6" })
+                    <div class="col-md-12">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.ListeningExperience)
+                            @Html.ValidationMessageFor(model => model.ListeningExperience, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.DesignExperience, htmlAttributes: new { @class = "control-label col-md-6" })
+                    <div class="col-md-12">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.DesignExperience)
+                            @Html.ValidationMessageFor(model => model.DesignExperience, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.LearningExperience, htmlAttributes: new { @class = "control-label col-md-6" })
+                    <div class="col-md-12">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.LearningExperience)
+                            @Html.ValidationMessageFor(model => model.LearningExperience, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.PersonalExperience, htmlAttributes: new { @class = "control-label col-md-6" })
+                    <div class="col-md-12">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.PersonalExperience)
+                            @Html.ValidationMessageFor(model => model.PersonalExperience, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
             @*<div class="form-group">
             <div class="col-md-offset-2 col-md-10">

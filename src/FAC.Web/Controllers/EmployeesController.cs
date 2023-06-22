@@ -10,6 +10,7 @@ using FAC.Web.Models;
 
 namespace FAC.Web.Controllers
 {
+    [Authorize(Roles = "admin")]
     public class EmployeesController : Controller
     {
         private readonly ApplicationDbContext _dbContext;
@@ -53,7 +54,7 @@ namespace FAC.Web.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "EmployeeId,EmployeeName,EmployeeDesignation,EmployeeAddress,EmployeePhone,EmployeeGender,City,CompanyName,PinCode,EmployeeDescription,DepartmentId,ProfilePhotoUrl,IncludeInTeamList,TeamListViewOrder,TwitterUrl,FacebookUrl,InstagramUrl")] Employee employee)
+        public ActionResult Create([Bind(Include = "EmployeeId,EmployeeName,EmployeeDesignation,EmployeeAddress,EmployeePhone,EmployeeGender,City,CompanyName,PinCode,EmployeeDescription,DepartmentId,ProfilePhotoUrl,IncludeInTeamList,TeamListViewOrder,TwitterUrl,FacebookUrl,InstagramUrl,ListeningExperience,DesignExperience,LearningExperience,PersonalExperience")] Employee employee)
         {
             if (ModelState.IsValid)
             {
@@ -87,7 +88,7 @@ namespace FAC.Web.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "EmployeeId,EmployeeName,EmployeeDesignation,EmployeeAddress,EmployeePhone,EmployeeGender,City,CompanyName,PinCode,EmployeeDescription,DepartmentId,ProfilePhotoUrl,IncludeInTeamList,TeamListViewOrder,TwitterUrl,FacebookUrl,InstagramUrl")] Employee employee)
+        public ActionResult Edit([Bind(Include = "EmployeeId,EmployeeName,EmployeeDesignation,EmployeeAddress,EmployeePhone,EmployeeGender,City,CompanyName,PinCode,EmployeeDescription,DepartmentId,ProfilePhotoUrl,IncludeInTeamList,TeamListViewOrder,TwitterUrl,FacebookUrl,InstagramUrl,ListeningExperience,DesignExperience,LearningExperience,PersonalExperience")] Employee employee)
         {
             if (ModelState.IsValid)
             {

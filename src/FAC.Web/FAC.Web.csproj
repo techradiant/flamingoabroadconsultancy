@@ -271,6 +271,10 @@
     <Compile Include="Migrations\202306031632103_UpdateEmployeeInstagramUrl.designer.cs">
       <DependentUpon>202306031632103_UpdateEmployeeInstagramUrl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202306201830193_UpdateEmployeeData.cs" />
+    <Compile Include="Migrations\202306201830193_UpdateEmployeeData.designer.cs">
+      <DependentUpon>202306201830193_UpdateEmployeeData.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Department.cs" />
@@ -478,11 +482,12 @@
     <Content Include="Media\images\resource\visa assist.jpg" />
     <Content Include="Media\images\resource\visa.jpg" />
     <Content Include="Media\images\Team Profile\Deepika Malik.jpg" />
-    <Content Include="Media\images\Team Profile\IMG_20230608_102631.jpg" />
-    <Content Include="Media\images\Team Profile\Kajal.jpg" />
-    <Content Include="Media\images\Team Profile\Neeraj.jpg" />
-    <Content Include="Media\images\Team Profile\ravesh.jpg" />
-    <Content Include="Media\images\Team Profile\Sahil.jpg" />
+    <Content Include="Media\images\Team Profile\Ekta Kalkal.jpg" />
+    <Content Include="Media\images\Team Profile\Hariom Kaushik.jpg" />
+    <Content Include="Media\images\Team Profile\Kajal Sangwan.jpg" />
+    <Content Include="Media\images\Team Profile\Neeraj Indoria.jpg" />
+    <Content Include="Media\images\Team Profile\Ravesh Budhwar.jpg" />
+    <Content Include="Media\images\Team Profile\Sahil Budhwar.jpg" />
     <Content Include="plugins\revolution\css\layers.css" />
     <Content Include="plugins\revolution\css\navigation.css" />
     <Content Include="plugins\revolution\css\settings.css" />
@@ -667,6 +672,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202306031632103_UpdateEmployeeInstagramUrl.resx">
       <DependentUpon>202306031632103_UpdateEmployeeInstagramUrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202306201830193_UpdateEmployeeData.resx">
+      <DependentUpon>202306201830193_UpdateEmployeeData.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

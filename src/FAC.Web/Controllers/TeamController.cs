@@ -23,9 +23,11 @@ namespace FAC.Web.Controllers
             return View(teamMembers);            
         }
 
-        public ActionResult TeamDetails()
+        public ActionResult TeamDetails( int teamMemberId)
         {
-            return View();
+            Employee teamMember = _context.Employees.FirstOrDefault(emp => emp.IncludeInTeamList && emp.EmployeeId==teamMemberId);
+
+            return View(teamMember);
         }
     }
 }

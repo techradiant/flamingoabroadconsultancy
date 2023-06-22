@@ -154,13 +154,24 @@
                         @Html.DisplayNameFor(model => model.InstagramUrl)
                     </dt>
 
-                    <dd>
-                        @Html.DisplayFor(model => model.InstagramUrl)
-                    </dd>
-
-                </dl>
-            </div>
-            <p>
+        <dd>
+            @Html.DisplayFor(model => model.InstagramUrl)
+        </dd>
+        <dd>
+            @Html.DisplayFor(model => model.ListeningExperience)
+        </dd>
+        <dd>
+            @Html.DisplayFor(model => model.DesignExperience)
+        </dd>
+        <dd>
+            @Html.DisplayFor(model => model.LearningExperience)
+        </dd>
+        <dd>
+            @Html.DisplayFor(model => model.PersonalExperience)
+        </dd>
+    </dl>
+</div>
+<p>
                 @Html.ActionLink("Edit", "Edit", new { id = Model.EmployeeId }, new { @class = "theme-btn btn-style-one" }) <br /><br /><br />
                 @*@Html.ActionLink("Back to List", "Index")*@
                 @Html.ActionLink("Back to List", "Index", new { area = "" }, new { @class = "theme-btn btn-style-one" })

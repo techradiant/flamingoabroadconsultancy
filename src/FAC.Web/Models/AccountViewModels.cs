@@ -49,9 +49,9 @@ namespace FAC.Web.Models
     public class LoginViewModel
     {
         [Required]
-        [Display(Name = "Email")]
-        [EmailAddress]
-        public string Email { get; set; }
+        [RegularExpression("^[a-zA-Z0-9_]*$", ErrorMessage = "Only Alphabets Numbers and underscore allowed.")]
+        [Display(Name = "Username")]       
+        public string Username { get; set; }
 
         [Required]
         [DataType(DataType.Password)]
@@ -64,6 +64,11 @@ namespace FAC.Web.Models
 
     public class RegisterViewModel
     {
+        [Required]        
+        [Display(Name = "Username")]
+        [RegularExpression("^[a-zA-Z0-9_]*$", ErrorMessage = "Only Alphabets and Numbers allowed.")]
+        public string UserName { get; set; }
+
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]

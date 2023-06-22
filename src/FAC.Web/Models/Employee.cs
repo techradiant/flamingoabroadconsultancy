@@ -56,6 +56,18 @@ namespace FAC.Web.Models
 
         [Display(Name = "Instagram Url")]
         public string InstagramUrl { get; set; }
-       
+
+
+        [Display(Name = "Listening Experience")]
+        public int ListeningExperience { get; set; }
+
+        [Display(Name = "Design Experience")]
+        public int DesignExperience { get; set; }
+
+        [Display(Name = "Learning Experience")]
+        public int LearningExperience { get; set; }
+
+        [Display(Name = "Personal Experience")]
+        public string PersonalExperience { get; set; }
     }
 }

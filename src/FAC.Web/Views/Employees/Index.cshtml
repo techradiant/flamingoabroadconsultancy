@@ -53,19 +53,20 @@
                         <th class="emp-data">
                             @Html.DisplayNameFor(model => model.City)
                         </th>
-                        <th class="emp-data"> 
+                        <th class="emp-data">
                             @Html.DisplayNameFor(model => model.CompanyName)
                         </th>
                         <th class="emp-data">
                             @Html.DisplayNameFor(model => model.PinCode)
                         </th>
-                        <th class="emp-data">
-                            @Html.DisplayNameFor(model => model.EmployeeDescription)
-                        </th>
+
+                        @*<th class="emp-data">
+            @Html.DisplayNameFor(model => model.EmployeeDescription)
+        </th>*@
                         <th class="emp-data">
                             @Html.DisplayNameFor(model => model.ProfilePhotoUrl)
                         </th>
-                        <th class="emp-data"> 
+                        <th class="emp-data">
                             @Html.DisplayNameFor(model => model.IncludeInTeamList)
                         </th>
                         <th class="emp-data">
@@ -80,6 +81,20 @@
                         <th class="emp-data">
                             @Html.DisplayNameFor(model => model.InstagramUrl)
                         </th>
+                        <th class="emp-data">
+                            @Html.DisplayNameFor(model => model.ListeningExperience)
+                        </th>
+                        <th class="emp-data">
+                            @Html.DisplayNameFor(model => model.DesignExperience)
+                        </th>
+                        <th class="emp-data">
+                            @Html.DisplayNameFor(model => model.LearningExperience)
+                        </th>
+
+                        <th class="emp-data">
+                            @Html.DisplayNameFor(model => model.PersonalExperience)
+                        </th>
+
                         <th class="emp-data">
                             Buttons
                         </th>
@@ -115,12 +130,12 @@
                             <td class="emp-data">
                                 @Html.DisplayFor(modelItem => item.PinCode)
                             </td>
-                            <td class="emp-data">
-                                @Html.DisplayFor(modelItem => item.EmployeeDescription)
-                            </td>
+                            @*<td class="emp-data">
+            @Html.DisplayFor(modelItem => item.EmployeeDescription)
+        </td>*@
                             <td class="emp-data">
                                 <img class="team-list-img" src="@item.ProfilePhotoUrl" />
-                                
+
                             </td>
                             <td class="emp-data">
                                 @Html.DisplayFor(modelItem => item.IncludeInTeamList)
@@ -136,6 +151,18 @@
                             </td>
                             <td class="emp-data">
                                 @Html.DisplayFor(modelItem => item.InstagramUrl)
+                            </td>
+                            <td class="emp-data">
+                                @Html.DisplayFor(modelItem => item.ListeningExperience)
+                            </td>
+                            <td class="emp-data">
+                                @Html.DisplayFor(modelItem => item.DesignExperience)
+                            </td>
+                            <td class="emp-data">
+                                @Html.DisplayFor(modelItem => item.LearningExperience)
+                            </td>
+                            <td class="emp-data">
+                                @Html.DisplayFor(modelItem => item.PersonalExperience)
                             </td>
                             <td class="emp-databtn">
                                 @Html.ActionLink("Edit", "Edit", new { id = item.EmployeeId }) &emsp;|&emsp;
